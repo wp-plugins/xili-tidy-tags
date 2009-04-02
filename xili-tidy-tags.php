@@ -865,7 +865,7 @@ if (!function_exists('get_terms_of_groups')) {
 		$group_ids = implode(', ', $group_ids);
 		$orderby = '';
 		if ($order == 'ASC' || $order == 'DESC') $orderby = 'ORDER BY tr.term_order '.$order ;
-		$query = "SELECT t.*, tt2.term_taxonomy_id, tt2.description,tt2.parent, tt2.count, tt2.taxonomy, tr.term_order FROM wpde_term_relationships AS tr INNER JOIN wpde_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id INNER JOIN wpde_terms AS t ON t.term_id = tr.object_id INNER JOIN wpde_term_taxonomy AS tt2 ON tt2.term_id = tr.object_id WHERE tt.taxonomy IN ('".$taxonomy."') AND tt2.taxonomy = '".$taxonomy_child."' AND tt.term_id IN (".$group_ids.") ".$orderby;
+		$query = "SELECT t.*, tt2.term_taxonomy_id, tt2.description,tt2.parent, tt2.count, tt2.taxonomy, tr.term_order FROM $wpdb->term_relationships AS tr INNER JOIN $wpdb->term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id INNER JOIN $wpdb->terms AS t ON t.term_id = tr.object_id INNER JOIN $wpdb->term_taxonomy AS tt2 ON tt2.term_id = tr.object_id WHERE tt.taxonomy IN ('".$taxonomy."') AND tt2.taxonomy = '".$taxonomy_child."' AND tt.term_id IN (".$group_ids.") ".$orderby;
 		$listterms = $wpdb->get_results($query);
 		if ( ! $listterms )
 			return array();
