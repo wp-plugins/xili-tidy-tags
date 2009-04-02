@@ -15,6 +15,7 @@ Technically, as xili-language, this plugin don't create tables in wordpress db. 
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. You can choose different storage policies.
 
 THIS VERSION 0.8.2 IS A BETA VERSION (running on our sites) - WE NEED FEEDBACK - coded as OOP and new admin UI WP 2.7 features (meta_box, js, screen options,...)
+If you encountered pb with 0.8.2 (no cloud display before today 20h GMT) reload 0.8.2 files...
 
 == Installation ==
 
