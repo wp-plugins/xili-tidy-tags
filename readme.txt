@@ -6,11 +6,11 @@ Requires at least: 2.7.0
 Tested up to: 2.7.1
 Stable tag: 0.9.0
 
-xili-tidy-tags is a tool for grouping tags by language or semantic group. 
+xili-tidy-tags is a tool for grouping tags by language or semantic group and for creating tidy tag clouds. 
 
 == Description ==
 
-xili-tidy-tags is a tool for grouping tags by language with xili-language plugin for multilingual site. By instance to present only tags in english when the theme is in english because the post or the current category present texts in english. But this tags aggregator can also, by instance, be used to group tags according two or more main parts of the CMS website.
+xili-tidy-tags is a tool for grouping tags by language with xili-language plugin for multilingual site and for creating tidy tag clouds. By instance to present only tags in english when the theme is in english because the post or the current category present texts in english. But this tags aggregator can also, by instance, be used to group tags according two or more main parts of the CMS website.
 Technically, as xili-language, this plugin don't create tables in wordpress db. He only use (rich) taxonomy features. So, with or without the plugin, the base structure is not modified. **Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. You can choose different storage policies.
 
