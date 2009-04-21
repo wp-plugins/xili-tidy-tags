@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget
 Requires at least: 2.7.0
 Tested up to: 2.7.1
-Stable tag: 0.9.1
+Stable tag: 0.9.2
 
 xili-tidy-tags is a tool for grouping tags by language or semantic group and for creating tidy tag clouds. 
 
@@ -14,9 +14,11 @@ xili-tidy-tags is a tool for grouping tags by language with xili-language plugin
 Technically, as xili-language, this plugin don't create tables in wordpress db. He only use (rich) taxonomy features. So, with or without the plugin, the base structure is not modified. **Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. You can choose different storage policies.
 
-= New 0.9.1 =
-With big tags list in admin UI, select tags starting or containing char(s) or word(s) - possible to split cloud in sub clouds via &offset= et &number= in the var passed to the `xili_tidy_tag_cloud` - .po file completed
+= New 0.9.2 =
+add features to modify kindship of tags group, now allows multiple cloud widgets - see note in [installation](http://wordpress.org/extend/plugins/xili-tidy-tags/installation/). 
 
+**0.9.1**
+With big tags list in admin UI, select tags starting or containing char(s) or word(s) - possible to split cloud in sub clouds via &offset= et &number= in the var passed to the `xili_tidy_tag_cloud` - .po file completed.
 **0.9.0**
 The tidy tags cloud widget is available. 
 And the template tags `xili_tidy_tag_cloud` (useful for theme's creator) is now more powerful with more args as in `tag_cloud or get_terms`.
@@ -29,6 +31,7 @@ It is also possible to create tag's group according category in three clicks - s
 1. Upload the folder containing `xili-tidy-tags.php` and others files to the `/wp-content/plugins/` directory,
 2. If xili-language plugin is activated, groups of languages are automatically created. If not, you can also use xili-tidy-tags to group your tags in semantic group like technical, trademark...
 3. in theme, a new template tag is available : `xili_tidy_tag_cloud` Same passed values as tag_cloud but two new : tagsgroup and tagsallgroup . tagsallgroup can be the parent group slug, tagsgroup is one of the child group slug. If one or both are included, the cloud is built with sub-selected tags in this (theses) group(s). 
+
 
 **Exemples of script in sidebar.php :**
 
@@ -64,6 +67,10 @@ if (function_exists('xili_tidy_tag_cloud')) xili_tidy_tag_cloud('tagsgroup='.sin
 = note about template tag =
 
 If the two args tagsgroup and tagsallgroup are empty, the content is all the tags as in current tag cloud but with more features for selecting or look as soon documented.
+
+= note about widget =
+If you create the single widget since 0.9.0, with 0.9.2 (which allows more than one), you need to recreate one, two or more widget(s) in theme admin UI.
+
 
 == Frequently Asked Questions ==
 
@@ -103,10 +110,11 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
+= 0.9.2 = changing kindship, now allows multiple cloud widgets.
 = 0.9.1 = with big tags list, select tags starting or containing char(s) or word(s). &offset= et &number= in `xili_tidy_tag_cloud`
 = 0.9.0 = widget for compatible themes and UI actions to include group according a chosen category
 = 0.8.2 = fixes php warning when tagsgroup args are empty in tidy_tag_cloud()
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 090407 - MS - dev.xiligroup.com
+© 090422 - MS - dev.xiligroup.com
