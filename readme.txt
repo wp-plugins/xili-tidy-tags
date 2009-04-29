@@ -4,14 +4,20 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget
 Requires at least: 2.7.0
 Tested up to: 2.7.1
-Stable tag: 0.9.2
+Stable tag: 0.9.3
 
-xili-tidy-tags is a tool for grouping tags by language or semantic group and for creating tidy tag clouds. 
+xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
 == Description ==
 
-xili-tidy-tags is a tool for grouping tags by language with xili-language plugin for multilingual site and for creating tidy tag clouds. By instance to present only tags in english when the theme is in english because the post or the current category present texts in english. But this tags aggregator can also, by instance, be used to group tags according two or more main parts of the CMS website.
-Technically, as xili-language, this plugin don't create tables in wordpress db. He only use (rich) taxonomy features. So, with or without the plugin, the base structure is not modified. **Template tags** are provided to enrich the theme and display sub-selection of tags.
+= on multilingual website =
+xili-tidy-tags is a tool for grouping tags by language with xili-language plugin for multilingual site and for creating tidy tag clouds. By instance to present only tags in english when the theme is in english because the post or the current category present texts in english. 
+= on monolingual website (blog or CMS) =
+xili-tidy-tags is a tool for grouping tags by semantic groups and sub-groups.
+This tags aggregator can also, by instance, be used to group tags according two or more main parts of the CMS website.
+Technically, as xili-language, this plugin don't create tables in wordpress db. He only use (rich) taxonomy features. So, with or without the plugin, the base structure is not modified. 
+
+**Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. You can choose different storage policies.
 
 = New 0.9.2 =
@@ -39,7 +45,7 @@ It is also possible to create tag's group according category in three clicks - s
 `
 <div>
 <h2><?php _e('Tags cloud','xilidev');?></h2>
-<?php if (function_exists('xili_tidy_tag_cloud')) xili_tidy_tag_cloud('tagsgroup='.the_curlang().'&tagsallgroup=tidy-languages-group&largest=18'); ?>
+<?php if (function_exists('xili_tidy_tag_cloud') && class_exists('xili_language')) xili_tidy_tag_cloud('tagsgroup='.the_curlang().'&tagsallgroup=tidy-languages-group&largest=18'); ?>
 </div>
 
 `
@@ -86,10 +92,13 @@ and the first from China since plugin version 0.8.0
 
 layabozi.com [here](http://layabozi.com) to sub select music maker name and other tags sub-groups.
 
-= Next steps ? =
+= Compatibility with other plugins ? =
 
-More admin UI tools for bulk actions with tags groups....
+In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/), [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/) , a set of plugins to create powerful multilingual CMS website.
 
+= Compatibility with WP 2.8 ? =
+
+Today, with current dev release, xili-tidy-tags appears to be compatible with future 2.8 version.
 
 == Screenshots ==
 
@@ -110,6 +119,7 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
+= 0.9.3 = W3C, recover compatibility with future WP 2.8
 = 0.9.2 = changing kindship, now allows multiple cloud widgets.
 = 0.9.1 = with big tags list, select tags starting or containing char(s) or word(s). &offset= et &number= in `xili_tidy_tag_cloud`
 = 0.9.0 = widget for compatible themes and UI actions to include group according a chosen category
@@ -117,4 +127,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 090422 - MS - dev.xiligroup.com
+© 090429 - MS - dev.xiligroup.com
