@@ -8,7 +8,7 @@ Version: 0.9.4
 Author URI: http://dev.xiligroup.com
 */
 
-# 0.9.4 - 090518 - when creating tags in post UI - group new tag to default lang if xili-language is active
+# 0.9.4 - 090519 - when creating tags in post UI - group new tag to default lang if xili-language is active
 # 0.9.3 - 090429 - fixe class of metabox has-right-sidebar for next WP 2.8
 # 0.9.2 - 090422 - add feature to modify kindship of tags group, now allows multiple cloud widgets. !
 # 0.9.1 - 090407 - add offset in cloud, select tags starting or containing char(s) or word(s) in admin UI,
@@ -203,8 +203,8 @@ class xili_tidy_tags {
 						}
 					}
 					if ($nbchecked == false) { 
-						if ($post_curlang == false) { /* add to group parent */
-						    wp_set_object_terms((int) $tag->term_id, $langgroupid, TAXOTIDYTAGS,false);
+						if ($post_curlang == false) { /* add to group parent  - int mandatory*/
+						    wp_set_object_terms((int) $tag->term_id, (int) $langgroupid, TAXOTIDYTAGS,false);
 						} else {
 							$res = is_term ($post_curlang,TAXOTIDYTAGS);
 							wp_set_object_terms((int) $tag->term_id, (int) $res ['term_id'], TAXOTIDYTAGS,false);
