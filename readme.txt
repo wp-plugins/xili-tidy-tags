@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget
 Requires at least: 2.7.0
 Tested up to: 2.7.1
-Stable tag: 0.9.3
+Stable tag: 0.9.4
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -20,9 +20,10 @@ Technically, as xili-language, this plugin don't create tables in wordpress db. 
 **Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. You can choose different storage policies.
 
-= New 0.9.2 =
-add features to modify kindship of tags group, now allows multiple cloud widgets - see note in [installation](http://wordpress.org/extend/plugins/xili-tidy-tags/installation/). 
+= New 0.9.4 = When creating tags in post edit UI - this new tag is grouped to default post's lang if xili-language is active and if this tag is not already grouped.
 
+**0.9.2**
+add features to modify kindship of tags group, now allows multiple cloud widgets - see note in [installation](http://wordpress.org/extend/plugins/xili-tidy-tags/installation/). 
 **0.9.1**
 With big tags list in admin UI, select tags starting or containing char(s) or word(s) - possible to split cloud in sub clouds via &offset= et &number= in the var passed to the `xili_tidy_tag_cloud` - .po file completed.
 **0.9.0**
@@ -119,6 +120,7 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
+= 0.9.4 = when creating tags in post UI - group new tag to default lang if xili-language is active
 = 0.9.3 = W3C, recover compatibility with future WP 2.8
 = 0.9.2 = changing kindship, now allows multiple cloud widgets.
 = 0.9.1 = with big tags list, select tags starting or containing char(s) or word(s). &offset= et &number= in `xili_tidy_tag_cloud`
@@ -127,4 +129,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 090429 - MS - dev.xiligroup.com
+© 090518 - MS - dev.xiligroup.com
