@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget
 Requires at least: 2.7.0
 Tested up to: 2.7.1
-Stable tag: 0.9.4
+Stable tag: 0.9.5
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -20,8 +20,10 @@ Technically, as xili-language, this plugin don't create tables in wordpress db. 
 **Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. You can choose different storage policies.
 
-= New 0.9.4 = When creating tags in post edit UI - this new tag is grouped to default post's lang if xili-language is active and if this tag is not already grouped.
-
+= New 0.9.5 = 
+Add capability management for editors role grouping - and setting -. Set by administrator role.
+**0.9.4**
+When creating tags in post edit UI - this new tag is grouped to default post's lang if xili-language is active and if this tag is not already grouped.
 **0.9.2**
 add features to modify kindship of tags group, now allows multiple cloud widgets - see note in [installation](http://wordpress.org/extend/plugins/xili-tidy-tags/installation/). 
 **0.9.1**
@@ -113,13 +115,18 @@ Today, with current dev release, xili-tidy-tags appears to be compatible with fu
 
 == More infos ==
 
+= Capabilities and roles : =
+
+0.9.5 : Administrator role can create grouping or setting capabilities for editor role. 'Grouping' permits to editor to group tags in group (lang and/or semantic). 'Setting' permits to editor to create, modify or delete semantic groups. Only administrator has access to languages groups. 
+
+
 This first beta releases are for multilingual or cms website's creator or designer.
 
 The plugin post is frequently documented [dev.xiligroup.com](http://dev.xiligroup.com/)
 and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy-tags/).
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
-
+= 0.9.5 = Capabilities and roles, better admin menu
 = 0.9.4 = when creating tags in post UI - group new tag to default lang if xili-language is active
 = 0.9.3 = W3C, recover compatibility with future WP 2.8
 = 0.9.2 = changing kindship, now allows multiple cloud widgets.
@@ -129,4 +136,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 090519 - MS - dev.xiligroup.com
+© 090527 - MS - dev.xiligroup.com
