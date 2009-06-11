@@ -3,24 +3,30 @@ Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget
 Requires at least: 2.7.0
-Tested up to: 2.7.1
-Stable tag: 0.9.5
+Tested up to: 2.8
+Stable tag: 1.0
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
 == Description ==
 
-= on multilingual website =
-xili-tidy-tags is a tool for grouping tags by language with xili-language plugin for multilingual site and for creating tidy tag clouds. By instance to present only tags in english when the theme is in english because the post or the current category present texts in english. 
 = on monolingual website (blog or CMS) =
 xili-tidy-tags is a tool for grouping tags by semantic groups and sub-groups.
 This tags aggregator can also, by instance, be used to group tags according two or more main parts of the CMS website.
-Technically, as xili-language, this plugin don't create tables in wordpress db. He only use (rich) taxonomy features. So, with or without the plugin, the base structure is not modified. 
+
+= on multilingual website =
+xili-tidy-tags is a tool for grouping tags by language with xili-language plugin for multilingual site and for creating tidy tag clouds. By instance to present only tags in english when the theme is in english because the post or the current category present texts in english. Technically, as xili-language, this plugin don't create tables in wordpress db. He only use (rich) taxonomy features. So, with or without the plugin, the base structure is not modified. 
+
 
 **Template tags** are provided to enrich the theme and display sub-selection of tags.
-Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. You can choose different storage policies.
+Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark" You can choose different storage policies.
 
-= New 0.9.5 = 
+= NEW 1.0 = add shortcode to include a cloud of a group of tags inside a post, also compatible with new recent WP 2.8.
+
+**Example of shortcode :**  `[xili-tidy-tags params="tagsgroup=trademark&largest=10&smallest=10" glue=" | "]`
+In this cas, the group of tags named 'trademark' will be display inside a paragraph of a post. The params are defined as in `xili_tidy_tag_cloud()` and as in `wp_tag_cloud()`. The glue is chars inserted between the tags (if omitted default is a space).
+
+**0.9.5** 
 Add capability management for editors role grouping - and setting -. Set by administrator role.
 **0.9.4**
 When creating tags in post edit UI - this new tag is grouped to default post's lang if xili-language is active and if this tag is not already grouped.
@@ -101,7 +107,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 
 = Compatibility with WP 2.8 ? =
 
-Today, with current dev release, xili-tidy-tags appears to be compatible with future 2.8 version.
+Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 
 == Screenshots ==
 
@@ -126,6 +132,7 @@ The plugin post is frequently documented [dev.xiligroup.com](http://dev.xiligrou
 and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy-tags/).
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
+= 1.0 = add shortcode to include a cloud of a group of tags inside a post - compatible with WP 2.8
 = 0.9.5 = Capabilities and roles, better admin menu
 = 0.9.4 = when creating tags in post UI - group new tag to default lang if xili-language is active
 = 0.9.3 = W3C, recover compatibility with future WP 2.8
@@ -136,4 +143,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 090527 - MS - dev.xiligroup.com
+© 090611 - MS - dev.xiligroup.com
