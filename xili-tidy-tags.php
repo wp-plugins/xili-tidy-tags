@@ -230,7 +230,7 @@ class xili_tidy_tags {
 	 *
 	 * @since 0.8.0
 	 * @updated 0.9.5 - menu without repeat of main title, levels with new caps set by plugin array(&$this,'top_tidy_menu_title')
-	 *
+	 * @updated 1.0.1 - favicon.ico for menu title
 	 */
 	function xili_add_pages() {
 		 
