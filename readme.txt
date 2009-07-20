@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget
 Requires at least: 2.7.0
 Tested up to: 2.8
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -119,6 +119,24 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 6. widget UI : display a sub-group of tags named philosophy.
 7. the admin settings UI : with big tags list, it is now possible to select tags starting or containing char(s) or word(s).
 
+== Changelog ==
+
+= 1.0.1 = some fixes in php code on some servers (Thanks to Giannis)
+= 1.0 = 
+* add shortcode to include a cloud of a group of tags inside a post,
+* compatible with WP 2.8.
+= 0.9.5 = Capabilities and roles, better admin menu
+= 0.9.4 = when creating tags in post UI - group new tag to default lang if xili-language is active
+= 0.9.3 = W3C, recover compatibility with future WP 2.8
+= 0.9.2 = changing kindship, now allows multiple cloud widgets.
+= 0.9.1 = with big tags list, select tags starting or containing char(s) or word(s). &offset= et &number= in `xili_tidy_tag_cloud`
+= 0.9.0 = widget for compatible themes and UI actions to include group according a chosen category
+= 0.8.2 = fixes php warning when tagsgroup args are empty in tidy_tag_cloud()
+= 0.8.1 = some fixes - improved query - better tag_cloud()
+= 0.8.0 = first public beta release.
+
+© 2009-06-21 dev.xiligroup.com
+
 == More infos ==
 
 = Capabilities and roles : =
@@ -132,15 +150,6 @@ The plugin post is frequently documented [dev.xiligroup.com](http://dev.xiligrou
 and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy-tags/).
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
-= 1.0 = add shortcode to include a cloud of a group of tags inside a post - compatible with WP 2.8
-= 0.9.5 = Capabilities and roles, better admin menu
-= 0.9.4 = when creating tags in post UI - group new tag to default lang if xili-language is active
-= 0.9.3 = W3C, recover compatibility with future WP 2.8
-= 0.9.2 = changing kindship, now allows multiple cloud widgets.
-= 0.9.1 = with big tags list, select tags starting or containing char(s) or word(s). &offset= et &number= in `xili_tidy_tag_cloud`
-= 0.9.0 = widget for compatible themes and UI actions to include group according a chosen category
-= 0.8.2 = fixes php warning when tagsgroup args are empty in tidy_tag_cloud()
-= 0.8.1 = some fixes - improved query - better tag_cloud()
-= 0.8.0 = first public beta release.
 
-© 090611 - MS - dev.xiligroup.com
+
+© 090718 - MS - dev.xiligroup.com
