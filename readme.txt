@@ -22,11 +22,11 @@ xili-tidy-tags is a tool for grouping tags by language with xili-language plugin
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark" You can choose different storage policies.
 
 = NEW 1.1 =
-In loop, the template tag `the_tags()` named `xili_the_tags` is now able to sub-select tags for the current post from sub-groups. Example of code : 
+In loop, the template tag `the_tags()` named `xili_the_tags` is now available to sub-select tags for the current post from sub-groups. Example of code : 
 `
 xili_the_tags('',' &bull; ','',array('sub_groups'=>array('trademark', 'software')));
 `
-With these parameters, only tags from subgroups 'trademark' & 'software' are displayed in loop with each post.
+With these parameters, only tags from subgroups 'trademark' & 'software' are displayed in loop with each post (use slug of terms). The first three parameters are used like in `the_tags()`. The fourth is an array with an key added to a lot of keys as in taxonomy function `wp_get_object_terms` - see source .
 
 ** 1.0 ** add shortcode to include a cloud of a group of tags inside a post, also compatible with new recent WP 2.8.
 **Example of shortcode :**  `[xili-tidy-tags params="tagsgroup=trademark&largest=10&smallest=10" glue=" | "]`
