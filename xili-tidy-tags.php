@@ -4,10 +4,10 @@ Plugin Name: xili-tidy-tags
 Plugin URI: http://dev.xiligroup.com/xili-tidy-tags/
 Description: xili-tidy-tags is a tool for grouping tags by language or semantic group. Initially developed to enrich xili-language plugin and usable in all sites (CMS).
 Author: dev.xiligroup.com - MS
-Version: 1.0.1
+Version: 1.1
 Author URI: http://dev.xiligroup.com
 */
-
+# 1.1 - 091012 - new xili_the_tags() for the loop
 # 1.0.1 - 090718 - new icon in admin menu - some fixes in php code for some servers (Thanks to Giannis)
 # 1.0   - 090611 - add shortcode to include a cloud of a group of tags inside a post - compatible with WP 2.8
 # 0.9.6 - 090602 <- # 0.8.1 - 090331 - see history in readme.txt -
@@ -27,7 +27,7 @@ Author URI: http://dev.xiligroup.com
 # License along with this plugin; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
-define('XILITIDYTAGS_VER','1.0.1'); /* used in admin UI */
+define('XILITIDYTAGS_VER','1.1'); /* used in admin UI */
 
 class xili_tidy_tags {
 	
