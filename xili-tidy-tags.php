@@ -1092,7 +1092,7 @@ function xili_tidy_tag_cloud( $args = '' ) {
 		}
 		//$tags = get_terms_with_order ($group_id, TAXOTIDYTAGS,'post_tag'); /* the two taxonomies (both of terms) */
 		$tags = get_terms_of_groups ($group_id, TAXOTIDYTAGS,'post_tag',$r); /* arg $r for sub selection */
-		echo '--xxx-';
+		//echo '--xxx-';
 	}	
 
 	if ( empty( $tags ) )
