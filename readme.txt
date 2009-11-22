@@ -3,8 +3,8 @@ Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS
 Requires at least: 2.7.0
-Tested up to: 2.8.4
-Stable tag: 1.1
+Tested up to: 2.9
+Stable tag: 1.2
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -21,14 +21,17 @@ xili-tidy-tags is a tool for grouping tags by language with xili-language plugin
 **Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark" You can choose different storage policies.
 
-= NEW 1.1 =
+= New 1.2 =
+fix default sorting and order in sub-selection by group for `xili_tidy_tag_cloud()` (thanks to Zarban)
+
+**1.1**
 In loop, the template tag `the_tags()` named `xili_the_tags` is now available to sub-select tags for the current post from sub-groups. Example of code : 
 `
 xili_the_tags('',' &bull; ','',array('sub_groups'=>array('trademark', 'software')));
 `
-With these parameters, only tags from subgroups 'trademark' & 'software' are displayed in loop with each post (use slug of terms).
+With these parameters, only tags from subgroups 'trademark' & 'software' are displayed in loop with each post (use slug of terms). The first three parameters are used like in `the_tags()`. The fourth is an array with an key added to a lot of keys as in taxonomy function `wp_get_object_terms` - see source .
 
-** 1.0 ** add shortcode to include a cloud of a group of tags inside a post, also compatible with new recent WP 2.8.
+**1.0** add shortcode to include a cloud of a group of tags inside a post, also compatible with new recent WP 2.8.
 **Example of shortcode :**  `[xili-tidy-tags params="tagsgroup=trademark&largest=10&smallest=10" glue=" | "]`
 In this cas, the group of tags named 'trademark' will be display inside a paragraph of a post. The params are defined as in `xili_tidy_tag_cloud()` and as in `wp_tag_cloud()`. The glue is chars inserted between the tags (if omitted default is a space).
 
@@ -127,6 +130,7 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 
 == Changelog ==
 
+= 1.2 = fix `xili_tidy_tag_cloud` sort and order.
 = 1.1 = In loop, the template tag `the_tags` named `xili_the_tags` is now able to show only tags of sub-group(s).
 = 1.0.1 = some fixes in php code on some servers (Thanks to Giannis)
 = 1.0 = 
@@ -142,7 +146,7 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2009-10-12 dev.xiligroup.com
+© 2009-11-22 dev.xiligroup.com
 
 == More infos ==
 
@@ -159,4 +163,4 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
 
-© 091012 - MS - dev.xiligroup.com
+© 091122 - MS - dev.xiligroup.com
