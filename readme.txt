@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS
 Requires at least: 2.7.0
 Tested up to: 2.9
-Stable tag: 1.2
+Stable tag: 1.2.1
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -21,8 +21,10 @@ xili-tidy-tags is a tool for grouping tags by language with xili-language plugin
 **Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark" You can choose different storage policies.
 
-= New 1.2 =
-fix default sorting and order in sub-selection by group for `xili_tidy_tag_cloud()` (thanks to Zarban)
+= New 1.2.1 =
+
+* now quick-edit tag is allowed (keep terms groups)...
+* fix default sorting and order in sub-selection by group for `xili_tidy_tag_cloud()` (thanks to Zarban)
 
 **1.1**
 In loop, the template tag `the_tags()` named `xili_the_tags` is now available to sub-select tags for the current post from sub-groups. Example of code : 
@@ -130,6 +132,7 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 
 == Changelog ==
 
+= 1.2.1 = fix quick-edit tag function.
 = 1.2 = fix `xili_tidy_tag_cloud` sort and order.
 = 1.1 = In loop, the template tag `the_tags` named `xili_the_tags` is now able to show only tags of sub-group(s).
 = 1.0.1 = some fixes in php code on some servers (Thanks to Giannis)
@@ -146,7 +149,7 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2009-11-22 dev.xiligroup.com
+© 2009-11-29 dev.xiligroup.com
 
 == More infos ==
 
@@ -163,4 +166,4 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
 
-© 091122 - MS - dev.xiligroup.com
+© 091129 - MS - dev.xiligroup.com
