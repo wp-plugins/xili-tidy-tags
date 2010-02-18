@@ -25,7 +25,7 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 * Add sub-selection by tags belonging to a group - or not belonging to this group (suggestion of David). With this way, it is possible to see tags selected in one group and the others there are not. The sub-selection by starting or containing letters remains. The columns of group are now sorted and grouped.
 * Now uses Walker class to sort groups in UI.
 
-**New 1.2.1**
+**1.2.1**
 
 * now quick-edit tag is allowed (keep terms groups)...
 * fix default sorting and order in sub-selection by group for `xili_tidy_tag_cloud()` (thanks to Zarban)
@@ -164,6 +164,7 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 
 == Upgrade Notice ==
 
+As recommanded, don't forget to make a backup of the database.
 Upgrading can be easily procedeed through WP admin UI or through ftp.
 
 == More infos ==
