@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS
 Requires at least: 2.7.0
 Tested up to: 2.9
-Stable tag: 1.2.1
+Stable tag: 1.3.0 
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -12,16 +12,20 @@ xili-tidy-tags is a tool for grouping tags by semantic groups or by language and
 
 = on monolingual website (blog or CMS) =
 xili-tidy-tags is a tool for grouping tags by semantic groups and sub-groups.
-This tags aggregator can also, by instance, be used to group tags according two or more main parts of the CMS website.
+This tags aggregator can also, by instance, be used to group tags according two or more main parts of the CMS website. It is also possible to create group of tags in parallel of category and display a ‘sub’ tag cloud only depending of the displayed category.
 
 = on multilingual website =
 xili-tidy-tags is a tool for grouping tags by language with xili-language plugin for multilingual site and for creating tidy tag clouds. By instance to present only tags in english when the theme is in english because the post or the current category present texts in english. Technically, as xili-language, this plugin don't create tables in wordpress db. He only use (rich) taxonomy features. So, with or without the plugin, the base structure is not modified. 
 
 
 **Template tags** are provided to enrich the theme and display sub-selection of tags.
-Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark" You can choose different storage policies.
+Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark". You can choose different storage policies.
 
-= New 1.2.1 =
+= 1.3.0 =
+* Add sub-selection by tags belonging to a group - or not belonging to this group (suggestion of David). With this way, it is possible to see tags selected in one group and the others there are not. The sub-selection by starting or containing letters remains. The columns of group are now sorted and grouped.
+* Now uses Walker class to sort groups in UI.
+
+**1.2.1**
 
 * now quick-edit tag is allowed (keep terms groups)...
 * fix default sorting and order in sub-selection by group for `xili_tidy_tag_cloud()` (thanks to Zarban)
@@ -112,6 +116,10 @@ and the first from China since plugin version 0.8.0
 
 layabozi.com [here](http://layabozi.com) to sub select music maker name and other tags sub-groups.
 
+and a wonderful website
+
+[Frases de cine](http://www.frasesdecine.es) with more than 200 tags.
+
 = Compatibility with other plugins ? =
 
 In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/), [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/) , a set of plugins to create powerful multilingual CMS website.
@@ -122,16 +130,19 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 
 == Screenshots ==
 
-1. the admin settings UI : tidy tags groups
-2. the admin settings UI : table and checkboxes to set group of tags.
+1. the admin settings UI : tidy tags groups.
+2. the admin assign UI : table and checkboxes to set group of tags.
 3. the admin settings UI : table and checkboxes to set group of tags : sub-selection of groups.
 4. widget UI : example where cloud of tags is dynamic and according categories and include group trademark.
 5. widget UI : (xili-language plugin activated) example where cloud of tags is dynamic and according language.
 6. widget UI : display a sub-group of tags named philosophy.
-7. the admin settings UI : with big tags list, it is now possible to select tags starting or containing char(s) or word(s).
+7. the admin assign UI : with big tags list, it is now possible to select tags starting or containing char(s) or word(s).
+8. the admin assign UI : here only the group “software” - a parent group -  is selected and all tags of his childs are shown.
+9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
 
+= 1.3.0 = add sub-selection by tags belonging to a group. Now uses Walker class to sort groups in settings UI.
 = 1.2.1 = fix quick-edit tag function.
 = 1.2 = fix `xili_tidy_tag_cloud` sort and order.
 = 1.1 = In loop, the template tag `the_tags` named `xili_the_tags` is now able to show only tags of sub-group(s).
@@ -149,7 +160,12 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2009-11-29 dev.xiligroup.com
+© 2010-02-18 dev.xiligroup.com
+
+== Upgrade Notice ==
+
+As recommanded, don't forget to make a backup of the database.
+Upgrading can be easily procedeed through WP admin UI or through ftp.
 
 == More infos ==
 
@@ -166,4 +182,4 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
 
-© 091129 - MS - dev.xiligroup.com
+© 100218 - MS - dev.xiligroup.com
