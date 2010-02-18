@@ -115,6 +115,10 @@ and the first from China since plugin version 0.8.0
 
 layabozi.com [here](http://layabozi.com) to sub select music maker name and other tags sub-groups.
 
+and a wonderful website
+
+[Frases de cine](http://www.frasesdecine.es) with more than 200 tags.
+
 = Compatibility with other plugins ? =
 
 In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/), [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/) , a set of plugins to create powerful multilingual CMS website.
@@ -125,7 +129,7 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 
 == Screenshots ==
 
-1. the admin settings UI : tidy tags groups and arrow on what is new.
+1. the admin settings UI : tidy tags groups and arrows on what is new.
 2. the admin settings UI : table and checkboxes to set group of tags.
 3. the admin settings UI : table and checkboxes to set group of tags : sub-selection of groups.
 4. widget UI : example where cloud of tags is dynamic and according categories and include group trademark.
@@ -135,6 +139,7 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 
 == Changelog ==
 
+= 1.3.0 = add sub-selection by tags belonging to a group
 = 1.2.1 = fix quick-edit tag function.
 = 1.2 = fix `xili_tidy_tag_cloud` sort and order.
 = 1.1 = In loop, the template tag `the_tags` named `xili_the_tags` is now able to show only tags of sub-group(s).
@@ -152,7 +157,11 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2009-11-29 dev.xiligroup.com
+© 2010-02-18 dev.xiligroup.com
+
+== Upgrade Notice ==
+
+Upgrading can be easily procedeed through WP admin UI or through ftp.
 
 == More infos ==
 
@@ -169,4 +178,4 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
 
-© 091129 - MS - dev.xiligroup.com
+© 100218 - MS - dev.xiligroup.com
