@@ -22,7 +22,7 @@ xili-tidy-tags is a tool for grouping tags by language with xili-language plugin
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark". You can choose different storage policies.
 
 = 1.3.0 =
-* Add sub-selection by tags belonging to a group - or not belonging to this group (suggestion of David). With this way, it is possible to see tags selected in one group and the others there are not. The sub-selection by starting or containing letters remains. Today the columns of group are not sorted or grouped but usables.
+* Add sub-selection by tags belonging to a group - or not belonging to this group (suggestion of David). With this way, it is possible to see tags selected in one group and the others there are not. The sub-selection by starting or containing letters remains. The columns of group are now sorted and grouped.
 * Now uses Walker class to sort groups in UI.
 
 **New 1.2.1**
