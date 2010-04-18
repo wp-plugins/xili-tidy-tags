@@ -19,6 +19,7 @@ xili-tidy-tags is a tool for grouping tags by language with xili-language plugin
 
 **IMPORTANT NOTE** : to prepare switch to WP3.0 (3.0-beta) single or multisite - see [Other versions](http://wordpress.org/extend/plugins/xili-tidy-tags/download/). The most recent version remains compatible with current WP 2.9.x.
 
+TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) 
 
 **Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark". You can choose different storage policies.
