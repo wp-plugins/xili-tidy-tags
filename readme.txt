@@ -25,6 +25,7 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 
 = 1.3.1, 1.3.2, 1.3.3 =
 * Minor modifications to be compatible with WP 3.0-beta standalone and wpmu (for testers and future specific improvements for wpmu)
+* A demo in multisite mode with WP 3.0 and 'twentyten' is [here](http://multilingual.wpmu.xilione.com).
 * In tags cloud widget , option to display tags as list added.
 = 1.3.0 =
 * Add sub-selection by tags belonging to a group - or not belonging to this group (suggestion of David). With this way, it is possible to see tags selected in one group and the others there are not. The sub-selection by starting or containing letters remains. The columns of group are now sorted and grouped.
