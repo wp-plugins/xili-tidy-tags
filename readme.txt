@@ -1,10 +1,10 @@
 === xili-tidy-tags ===
 Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
-Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS
+Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS,wpmu
 Requires at least: 2.7.0
-Tested up to: 2.9
-Stable tag: 1.3.0 
+Tested up to: 3.0-beta
+Stable tag: 1.3.3 
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -17,10 +17,15 @@ This tags aggregator can also, by instance, be used to group tags according two 
 = on multilingual website =
 xili-tidy-tags is a tool for grouping tags by language with xili-language plugin for multilingual site and for creating tidy tag clouds. By instance to present only tags in english when the theme is in english because the post or the current category present texts in english. Technically, as xili-language, this plugin don't create tables in wordpress db. He only use (rich) taxonomy features. So, with or without the plugin, the base structure is not modified. 
 
+TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/), 
+
 
 **Template tags** are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark". You can choose different storage policies.
 
+= 1.3.1, 1.3.2, 1.3.3 =
+* Minor modifications to be compatible with WP 3.0-beta standalone and wpmu (for testers and future specific improvements for wpmu)
+* In tags cloud widget , option to display tags as list added.
 = 1.3.0 =
 * Add sub-selection by tags belonging to a group - or not belonging to this group (suggestion of David). With this way, it is possible to see tags selected in one group and the others there are not. The sub-selection by starting or containing letters remains. The columns of group are now sorted and grouped.
 * Now uses Walker class to sort groups in UI.
@@ -104,6 +109,10 @@ If you create the single widget since 0.9.0, with 0.9.2 (which allows more than 
 
 == Frequently Asked Questions ==
 
+= What about WPMU and the trilogy ? =
+[xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/)
+Since WP 3.0-alpha, if multisite is activated, the trilogy is now compatible and will include progressively some improvements dedicaded especially for WPMU context. Future specific docs will be available for registered webmasters.
+
 = Where can I see websites using this plugin ? =
 
 dev.xiligroup.com [here](http://dev.xiligroup.com/ "a multi-language site")
@@ -120,13 +129,12 @@ and a wonderful website
 
 [Frases de cine](http://www.frasesdecine.es) with more than 200 tags.
 
+or
+[794 point 8 - Petite bibliothèque vidéoludique](http://www.794point8.com) as a library of video games.
+
 = Compatibility with other plugins ? =
 
 In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/), [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/) , a set of plugins to create powerful multilingual CMS website.
-
-= Compatibility with WP 2.8 ? =
-
-Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 
 == Screenshots ==
 
@@ -141,7 +149,7 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
-
+= 1.3.1, 1.3.2 = pre-tests for WP3.0-beta...
 = 1.3.0 = add sub-selection by tags belonging to a group. Now uses Walker class to sort groups in settings UI.
 = 1.2.1 = fix quick-edit tag function.
 = 1.2 = fix `xili_tidy_tag_cloud` sort and order.
@@ -160,12 +168,13 @@ Today, with current release, xili-tidy-tags is compatible with 2.8 version.
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2010-02-18 dev.xiligroup.com
+© 2010-04-11 dev.xiligroup.com
 
 == Upgrade Notice ==
 
 As recommanded, don't forget to make a backup of the database.
 Upgrading can be easily procedeed through WP admin UI or through ftp.
+Verify you install latest version of trilogy.
 
 == More infos ==
 
@@ -182,4 +191,4 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
 
-© 100218 - MS - dev.xiligroup.com
+© 100411 - MS - dev.xiligroup.com
