@@ -29,6 +29,7 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 
 = 1.3.1 to 1.4.1 =
 * 1.4.0 & 1.4.1 - full tested 3.0 mono and multisite - Parts of code rewritten
+* A demo in multisite mode with WP 3.0 and 'twentyten' is [here](http://multilingual.wpmu.xilione.com).
 * In tags cloud widget , option to display tags as list added.
 * Capabilities updated for editor role.
 * Minor modifications to be compatible with WP 3.0 standalone and wpmu (multisite)
