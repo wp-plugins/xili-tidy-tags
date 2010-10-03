@@ -1,7 +1,7 @@
 === xili-tidy-tags ===
 Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
-Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS,wpmu
+Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
 Requires at least: 2.9.0
 Tested up to: 3.0
 Stable tag: 1.4.2 
