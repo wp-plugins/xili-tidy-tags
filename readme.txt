@@ -1,10 +1,10 @@
 === xili-tidy-tags ===
 Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
-Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS,wpmu
+Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
 Requires at least: 2.9.0
 Tested up to: 3.0
-Stable tag: 1.4.2 
+Stable tag: 1.4.3 
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -31,8 +31,10 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 = Roadmap =
 * more ajax in tags list.
 * readme.txt rewritting.
+* today xili-tidy-tags is targeted only for post_tag : possible extension grouping tags of custom post type
 
-= 1.3.1 to 1.4.2 =
+= 1.3.1 to 1.4.3 =
+* annoying display in taxonomy of custom post type fixed
 * some warnings fixed when first activation
 * 1.4.0 & 1.4.1 - full tested 3.0 mono and multisite - Parts of code rewritten
 * In tags cloud widget , option to display tags as list added.
@@ -160,7 +162,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
-= 1.3.1 to 1.4.2 = pre-tests for WP3.0-beta, WP3.0, Code partially rewritten, Capabilities fixed,...
+= 1.3.1 to 1.4.3 = pre-tests for WP3.0-beta, WP3.0, Code partially rewritten, Capabilities fixed,...
 = 1.3.0 = add sub-selection by tags belonging to a group. Now uses Walker class to sort groups in settings UI.
 = 1.2.1 = fix quick-edit tag function.
 = 1.2 = fix `xili_tidy_tag_cloud` sort and order.
@@ -179,7 +181,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2010-10-03 dev.xiligroup.com
+© 2010-10-08 dev.xiligroup.com
 
 == Upgrade Notice ==
 
@@ -202,4 +204,4 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
 
 
-© 101003 - MS - dev.xiligroup.com
+© 101008 - MS - dev.xiligroup.com
