@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
 Requires at least: 2.9.0
 Tested up to: 3.0
-Stable tag: 1.5.0 
+Stable tag: 1.5.1 
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -21,31 +21,34 @@ xili-tidy-tags is a tool for grouping tags by language with xili-language plugin
 
 With default parent feature, a tag (term) can have only one parent. The default taxonomy (see file taxonomy.php in folder wp-includes) is very poweful but don't include the queries to group tags under one another tag. Is is the purpose of this plugin xili-tidy-tags created since WP 2.7 ! Initially created to group tags by language, he structurally contains all functions to group tags by semantic groups AND one tag can belong to one or more groups.
 
-= TRILOGY FOR MULTILINGUAL CMS SITE =
-[xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/), 
+= Widget to insert Tags cloud =
+The powerful widget is easy to setup and to choose what and when group of tags to display.
 
-
-**Template tags** are provided to enrich the theme and display sub-selection of tags.
+= Template tags = 
+are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark". You can choose different storage policies.
+
+= TRILOGY FOR MULTILINGUAL CMS SITE =
+[xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/)
 
 = Roadmap =
 * readme.txt rewritting.
-* today xili-tidy-tags is targeted only for post_tag : possible extension grouping tags of custom post type
+* today xili-tidy-tags is targeted only for post_tag : possible future extension grouping tags of custom post type
 
-= 1.5.0 =
+= 1.5.0 to 1.5.1 =
+* popup for groups in widget
 * javascript in tags list assign  (thanks to DataTables library)
 * fixe cache pb with get_terms
 * widget rewritten as extends class
 * contextual help
 
-= 1.3.1 to 1.4.3 =
+= 1.3.0 to 1.4.3 =
 * annoying display in taxonomy of custom post type fixed
 * some warnings fixed when first activation
 * 1.4.0 & 1.4.1 - full tested 3.0 mono and multisite - Parts of code rewritten
 * In tags cloud widget , option to display tags as list added.
 * Capabilities updated for editor role.
 * Minor modifications to be compatible with WP 3.0 standalone and wpmu (multisite)
-= 1.3.0 =
 * Add sub-selection by tags belonging to a group - or not belonging to this group (suggestion of David). With this way, it is possible to see tags selected in one group and the others there are not. The sub-selection by starting or containing letters remains. The columns of group are now sorted and grouped.
 * Now uses Walker class to sort groups in UI.
 
@@ -152,21 +155,22 @@ or
 
 = Compatibility with other plugins ? =
 
-In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/), [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/) , a set of plugins to create powerful multilingual CMS website.
+In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/), [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/) and [others](http://wordpress.org/extend/plugins/search.php?q=xili&sort=) , a set of plugins to create powerful multilingual (multisite) CMS website. 
 
 == Screenshots ==
 
 1. the admin settings UI : tidy tags groups.
 2. the admin assign UI : table and checkboxes to set group of tags.
-3. the admin settings UI : table and checkboxes to set group of tags : sub-selection of groups.
+3. the admin settings UI : table and checkboxes to set group of tags : sub-selection of column groups.
 4. widget UI : example where cloud of tags is dynamic and according categories and include group trademark.
-5. widget UI : (xili-language plugin activated) example where cloud of tags is dynamic and according language.
-6. widget UI : display a sub-group of tags named philosophy.
+5. widget UI : (xili-language plugin activated) example where cloud of tags is dynamic and according active language.
+6. widget UI : display a sub-group of tags named Trademark.
 7. the admin assign UI : with big tags list, it is now possible to select tags starting or containing char(s) or word(s).
 8. the admin assign UI : here only the group “software” - a parent group -  is selected and all tags of his childs are shown.
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
+= 1.5.1 = popup for groups in cloud widget, fixes DISTINCT issue when merging two groups
 = 1.5.0 = javascript in tags list assign
 = 1.3.1 to 1.4.3 = pre-tests for WP3.0-beta, WP3.0, Code partially rewritten, Capabilities fixed,...
 = 1.3.0 = add sub-selection by tags belonging to a group. Now uses Walker class to sort groups in settings UI.
@@ -187,7 +191,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2010-11-07 dev.xiligroup.com
+© 2010-11-27 dev.xiligroup.com
 
 == Upgrade Notice ==
 
@@ -207,7 +211,7 @@ This first beta releases are for multilingual or cms website's creator or design
 The plugin post is frequently documented [dev.xiligroup.com](http://dev.xiligroup.com/)
 and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy-tags/).
 
-See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-tidy-tags/).
+See also the [dev.xiligroup plugins forum](http://forum2.dev.xiligroup.com/forum.php?id=2).
 
 
 © 2009-2010 MS - dev.xiligroup.com
