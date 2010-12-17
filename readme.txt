@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
 Requires at least: 2.9.0
 Tested up to: 3.0
-Stable tag: 1.5.2 
+Stable tag: 1.5.3 
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -35,6 +35,9 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 * readme.txt rewritting.
 * today xili-tidy-tags is targeted only for post_tag : possible future extension grouping tags of custom post type
 
+
+= 1.5.3 =
+* In assign UI: add options to select unchecked tags only and to exclude one group and include unassigned.
 = 1.5.2 =
 * fixes some issues
 = 1.5.0 to 1.5.1 =
@@ -133,7 +136,7 @@ If you create the single widget since 0.9.0, with 0.9.2 (which allows more than 
 = What about WP 3.0 multisite mode (WPMU) and the trilogy ? =
 [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/)
 
-Since WP 3.0-alpha and now with 3.0.1, if multisite is activated, the trilogy is now compatible and will include progressively some improvements dedicaded especially for WPMU context. Future specific docs will be available for registered webmasters.
+Since WP 3.0-alpha and now with 3.1, if multisite is activated, the trilogy is now compatible and will include progressively some improvements dedicaded especially for WP network context. Future specific docs will be available for registered webmasters.
 
 
 = Where can I see websites using this plugin ? =
@@ -172,6 +175,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
+= 1.5.3 = add options to select unchecked tags only and to exclude one group and include unchecked.
 = 1.5.2 = fixes issues when xl temporary desactivated, some cache issues fixed.
 = 1.5.1 = popup for groups in cloud widget, fixes DISTINCT issue when merging two groups
 = 1.5.0 = javascript in tags list assign
@@ -194,7 +198,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2010-12-11 dev.xiligroup.com
+© 2010-12-17 dev.xiligroup.com
 
 == Upgrade Notice ==
 
@@ -209,10 +213,8 @@ Verify you install latest version of trilogy.
 0.9.5 : Administrator role can create grouping or setting capabilities for editor role. 'Grouping' permits to editor to group tags in group (lang and/or semantic). 'Setting' permits to editor to create, modify or delete semantic groups. Only administrator has access to languages groups. 
 
 
-This first beta releases are for multilingual or cms website's creator or designer.
-
 The plugin post is frequently documented [dev.xiligroup.com](http://dev.xiligroup.com/)
-and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy-tags/).
+and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy-tags/download/).
 
 See also the [dev.xiligroup plugins forum](http://forum2.dev.xiligroup.com/forum.php?id=2).
 
