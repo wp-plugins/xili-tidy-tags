@@ -3,8 +3,8 @@ Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
 Requires at least: 2.9.0
-Tested up to: 3.0
-Stable tag: 1.5.3 
+Tested up to: 3.1
+Stable tag: 1.5.4 
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -33,9 +33,14 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 
 = Roadmap =
 * readme.txt rewritting.
-* today xili-tidy-tags is targeted only for post_tag : possible future extension grouping tags of custom post type
-
-
+* today xili-tidy-tags is targeted only for post_tag : possible future extension grouping tags of custom post type.
+= 1.5.4 =
+* add two new template tags : 
+* `link_for_posts_of_xili_tags_group` to return the link to show posts of a xili_tags_group.
+* `xili_tags_group_list` to list tags-group with link to list Posts with tags belonging to each tags-group.
+* Webmaster: see end of source to read examples.
+= 1.5.3.1 =
+* In settings UI: option to disable datatables jabvascript in assign UI (for those with slow server and huge list of tags)
 = 1.5.3 =
 * In assign UI: add options to select unchecked tags only and to exclude one group and include unassigned.
 = 1.5.2 =
@@ -175,6 +180,8 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
+= 1.5.4 = add two template tags : `link_for_posts_of_xili_tags_group` to return the link to show posts of a xili_tags_group. `xili_tags_group_list` to list of tags-group with link to list Posts with tags belonging to each tags-group. See end of source to read example.
+= 1.5.3.1 = add option to desactivate javascript list
 = 1.5.3 = add options to select unchecked tags only and to exclude one group and include unchecked.
 = 1.5.2 = fixes issues when xl temporary desactivated, some cache issues fixed.
 = 1.5.1 = popup for groups in cloud widget, fixes DISTINCT issue when merging two groups
@@ -198,7 +205,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2010-12-17 dev.xiligroup.com
+© 2011-03-20 dev.xiligroup.com
 
 == Upgrade Notice ==
 
@@ -219,4 +226,4 @@ and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy
 See also the [dev.xiligroup plugins forum](http://forum2.dev.xiligroup.com/forum.php?id=2).
 
 
-© 2009-2010 MS - dev.xiligroup.com
+© 2009-2011 MS - dev.xiligroup.com
