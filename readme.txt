@@ -57,9 +57,11 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 * now quick-edit tag is allowed (keep terms groups)...
 * fix default sorting and order in sub-selection by group for `xili_tidy_tag_cloud()` (thanks to Zarban)
 
-* In loop, the template tag `the_tags()` named `xili_the_tags` is now available to sub-select tags for the current post from sub-groups. Example of code : 
+* In loop, the template tag `the_tags()` named `xili_the_tags` is now available to sub-select tags for the current post from sub-groups. Example of code:
+ 
 `
-xili_the_tags('',' &bull; ','',array('sub_groups'=>array('trademark', 'software')));
+<?php xili_the_tags('',' &bull; ','',array('sub_groups'=>array('trademark', 'software')));
+?>
 `
 * With these parameters, only tags from subgroups 'trademark' & 'software' are displayed in loop with each post (use slug of terms). The first three parameters are used like in `the_tags()`. The fourth is an array with an key added to a lot of keys as in taxonomy function `wp_get_object_terms` - see source .
 
