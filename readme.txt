@@ -91,27 +91,20 @@ In this cas, the group of tags named 'trademark' will be display inside a paragr
 
 = with xili-language plugin activated in multilingual website =
 `
-<div>
-<h2><?php _e('Tags cloud','xilidev');?></h2>
+<div><h2><?php _e('Tags cloud','xilidev');?></h2>
 <?php if (function_exists('xili_tidy_tag_cloud') && class_exists('xili_language')) xili_tidy_tag_cloud('tagsgroup='.the_curlang().'&tagsallgroup=tidy-languages-group&largest=18'); ?>
 </div>
-
 `
 
 = with semantic group named as category and a group containing trademarks named trademark =
 `
-<h2><?php _e('Tags cloud','xilidev');?></h2>
-
-<?php 
+<h2><?php _e('Tags cloud','xilidev');?></h2><?php 
 if (function_exists('xili_tidy_tag_cloud')) xili_tidy_tag_cloud('tagsgroup='.single_cat_title('',false).'&tagsallgroup=trademark&largest=18'); ?>
 </div>
-
 `
 = example of a splitted tag cloud of authors group (here separated by hr) - change html tags if you want to build a table with 3 columns =
 `
-<div>
-<h2><?php _e('Tags clouds','xilidev');?></h2>
-<?php if (function_exists('xili_tidy_tag_cloud')) xili_tidy_tag_cloud('tagsgroup=authors&largest=18&&number=15'); ?>
+<div><h2><?php _e('Tags clouds','xilidev');?></h2><?php if (function_exists('xili_tidy_tag_cloud')) xili_tidy_tag_cloud('tagsgroup=authors&largest=18&&number=15'); ?>
 <hr />
 <?php if (function_exists('xili_tidy_tag_cloud')) xili_tidy_tag_cloud('tagsgroup=authors&largest=18&&offset=15&number=15'); ?>
 <hr />
