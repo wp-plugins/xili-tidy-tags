@@ -3,8 +3,8 @@ Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
 Requires at least: 3.0
-Tested up to: 3.1
-Stable tag: 1.6.0
+Tested up to: 3.2
+Stable tag: 1.6.1
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -33,6 +33,8 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 
 = Roadmap =
 * readme.txt rewritting.
+= 1.6.1 =
+* fixes url and messages, new folder organization, fixes.
 = 1.6.0 =
 * today xili-tidy-tags is ready for custom taxonomy and custom post type.
 * tags cloud widget with conditionnal display as other xili plugins.
@@ -168,7 +170,8 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
-= 1.6.0 =
+= 1.6.0, 1.6.1 =
+* fixes url and messages, new folder organization, fixes
 * source cleaned.
 * today xili-tidy-tags is ready for custom taxonomy and custom post type.
 * possible multiple instantiation to permit another custom taxonomy similar to `post_tag`
@@ -198,12 +201,12 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2011-06-04 dev.xiligroup.com
+© 2011-06-29 dev.xiligroup.com
 
 == Upgrade Notice ==
 
 * As recommanded, don't forget to make a backup of the database.
-* Upgrading can be easily procedeed through WP admin UI or through ftp.
+* Upgrading can be easily procedeed through WP admin UI or through ftp (delete previous release folder before upgrading via ftp).
 * If updating via desktop ftp : erase previous version folder before uploading latest version.
 * Verify you install latest version of xili-language trilogy.
 
@@ -218,8 +221,6 @@ The plugin post is frequently documented [dev.xiligroup.com](http://dev.xiligrou
 and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy-tags/download/).
 
 See also the [dev.xiligroup plugins forum](http://forum2.dev.xiligroup.com/forum.php?id=2).
-
-
 
 
 © 2009-2011 MS - dev.xiligroup.com
