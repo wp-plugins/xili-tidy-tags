@@ -3,8 +3,8 @@ Contributors: michelwppi, MS dev.xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
 Requires at least: 3.0
-Tested up to: 3.3
-Stable tag: 1.6.3
+Tested up to: 3.4
+Stable tag: 1.7.0
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -33,6 +33,13 @@ Through the settings admin UI, it is possible to assign to a tag one or more gro
 
 = Roadmap =
 * readme.txt rewritting.
+* admin UI in separate class.
+= 1.7.0 ( 2012-05-28) =
+* language info in tags list
+* fixes in assign list display and query
+* cloud of other site if multisite in widget (further dev)
+= 1.6.4 =
+* pre-tests with WP 3.4
 = 1.6.1, 1.6.2 =
 * fixes url and messages, new folder organization, fixes custom post tags, tag edit + hierarchy.
 = 1.6.0 =
@@ -171,9 +178,15 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 
 == Changelog ==
 
+= 1.7.0 ( 2012-05-28) =
+* language info in tags list
+* fixes in assign list display
+* cloud of other site if multisite in widget (further dev)
+= 1.6.4 (2012-04-05) =
+* pre-tests with WP 3.4: fixes metaboxes columns
 = 1.6.3 =
 * maintenance release - warning
-= 1.6.0, 1.6.2 =
+= 1.6.0, 1.6.2 (2011-10-08) =
 * fixes custom post tags, tag edit + hierarchy
 * fixes url and messages, new folder organization, fixes
 * source cleaned.
@@ -185,14 +198,14 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 1.5.3 = add options to select unchecked tags only and to exclude one group and include unchecked.
 = 1.5.2 = fixes issues when xl temporary desactivated, some cache issues fixed.
 = 1.5.1 = popup for groups in cloud widget, fixes DISTINCT issue when merging two groups
-= 1.5.0 = javascript in tags list assign
+= 1.5.0 (2010-11-07) = javascript in tags list assign
 = 1.3.1 to 1.4.3 = pre-tests for WP3.0-beta, WP3.0, Code partially rewritten, Capabilities fixed,...
-= 1.3.0 = add sub-selection by tags belonging to a group. Now uses Walker class to sort groups in settings UI.
+= 1.3.0 (2010-02-18) = add sub-selection by tags belonging to a group. Now uses Walker class to sort groups in settings UI.
 = 1.2.1 = fix quick-edit tag function.
 = 1.2 = fix `xili_tidy_tag_cloud` sort and order.
-= 1.1 = In loop, the template tag `the_tags` named `xili_the_tags` is now able to show only tags of sub-group(s).
+= 1.1 (2009-10-12) = In loop, the template tag `the_tags` named `xili_the_tags` is now able to show only tags of sub-group(s).
 = 1.0.1 = some fixes in php code on some servers (Thanks to Giannis)
-= 1.0 = 
+= 1.0 (2009-06-11) = 
 * add shortcode to include a cloud of a group of tags inside a post,
 * compatible with WP 2.8.
 = 0.9.5 = Capabilities and roles, better admin menu
@@ -202,10 +215,10 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.9.1 = with big tags list, select tags starting or containing char(s) or word(s). &offset= et &number= in `xili_tidy_tag_cloud`
 = 0.9.0 = widget for compatible themes and UI actions to include group according a chosen category
 = 0.8.2 = fixes php warning when tagsgroup args are empty in tidy_tag_cloud()
-= 0.8.1 = some fixes - improved query - better tag_cloud()
+= 0.8.1 (2009-03-31) = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2012-01-22 dev.xiligroup.com
+© 2012-05-28 dev.xiligroup.com
 
 == Upgrade Notice ==
 
