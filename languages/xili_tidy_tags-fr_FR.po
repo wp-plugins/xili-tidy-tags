@@ -1,0 +1,804 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xili_tidy_tags\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-28 10:01+0100\n"
+"PO-Revision-Date: 2012-05-28 10:06+0100\n"
+"Last-Translator: dev.xiligroup <contact@xiligroup.com>\n"
+"Language-Team: dev.xiligroup.com <contact@xiligroup.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: xili-tidy-tags.php:221
+msgid "Settings"
+msgstr "Réglages"
+
+#: xili-tidy-tags.php:259
+#: xili-tidy-tags.php:302
+#, php-format
+msgid "© by xili-tidy-tags v. %s"
+msgstr "© par xili-tidy-tags v. %s"
+
+#: xili-tidy-tags.php:260
+#: xili-tidy-tags.php:303
+#: xili-tidy-tags.php:469
+#: xili-tidy-tags.php:471
+#: xili-tidy-tags.php:473
+#, php-format
+msgid "%s groups"
+msgstr "Les groupes pour %s "
+
+#: xili-tidy-tags.php:320
+msgid "Language"
+msgstr "Langue"
+
+#: xili-tidy-tags.php:349
+#, php-format
+msgid "Tags in %s."
+msgstr "Mots clés dans %s"
+
+#: xili-tidy-tags.php:353
+msgid "assigned in:"
+msgstr "assigné en :"
+
+#: xili-tidy-tags.php:469
+#: xili-tidy-tags.php:477
+#: xili-tidy-tags.php:1555
+#, php-format
+msgid "Tidy %s"
+msgstr "'Tidy' %s"
+
+#: xili-tidy-tags.php:471
+msgid "Info for SuperAdmin"
+msgstr "Infos pour Super Admin"
+
+#: xili-tidy-tags.php:473
+#: xili-tidy-tags.php:491
+#, php-format
+msgid "Tidy %s settings"
+msgstr "Réglages Tidy %s"
+
+#: xili-tidy-tags.php:477
+#, php-format
+msgid "Tidy %s assign"
+msgstr "Groupage %s"
+
+#: xili-tidy-tags.php:492
+msgid "This window is reserved for future settings in multisite mode (wpmu) for administrator like SuperAdmin..."
+msgstr "Cet écran est réservé pour des réglages futurs dans le contexte de WP multisite..."
+
+#: xili-tidy-tags.php:493
+#, php-format
+msgid "Link to set tidy %s in current site"
+msgstr "Lien pour régler tidy %s"
+
+#: xili-tidy-tags.php:493
+#, php-format
+msgid "To create groups of %s"
+msgstr "Pour créer les groupes de %s"
+
+#: xili-tidy-tags.php:494
+#, php-format
+msgid "Link to assign tidy %s in current site"
+msgstr "Lien pour affecter les tidy %s du site"
+
+#: xili-tidy-tags.php:494
+#, php-format
+msgid "To assign a group to %s"
+msgstr "Pour affecter un groupe à %s"
+
+#: xili-tidy-tags.php:496
+#: xili-tidy-tags.php:1110
+#: xili-tidy-tags.php:1605
+msgid "Author"
+msgstr "Auteur"
+
+#: xili-tidy-tags.php:509
+#: xili-tidy-tags.php:523
+#: xili-tidy-tags.php:1829
+msgid "Message"
+msgstr "Message"
+
+#: xili-tidy-tags.php:510
+#: xili-tidy-tags.php:524
+msgid "Info"
+msgstr "Info"
+
+#: xili-tidy-tags.php:511
+msgid "Mail & Support"
+msgstr "Courriel et support"
+
+#: xili-tidy-tags.php:513
+msgid "Capabilities"
+msgstr "Profil et droits"
+
+#: xili-tidy-tags.php:540
+#: xili-tidy-tags.php:1786
+msgid "Note:"
+msgstr "Note :"
+
+#: xili-tidy-tags.php:548
+msgid "On this page, the tags groups are defined. The special groups for xili-language plugin are importable.<br /> For debug, some technical infos are displayed in the tables or boxes.<br />"
+msgstr "Sur cette page, on définit les groupes de mots clés. Les groupes de langues créés par l'extension xili-language sont importables.<br /> Il y a des infos techniques dans les tables et boites pour le debogguage.<br />"
+
+#: xili-tidy-tags.php:550
+msgid "On this page, in a oneshot way, it is possible to assign the tags to one or more groups defined on the other page of <i>xili-tidy-tags</i> plugin."
+msgstr "Sur cette page, d'un seul coup, il est possible d'affecter un mot clé à un ou plusieurs groupes définis sur l'autre page de l'extension <i>xili-tidy-tags</i>."
+
+#: xili-tidy-tags.php:552
+msgid "<b>xili-tidy-tags</b> is a tool for grouping tags by language or semantic group. Initially developed to enrich multilingual website powered by xili-language plugin."
+msgstr "<b>xili-tidy-tags</b> est un outil pour regrouper les mots clés par langue ou par groupe sémantique. Cette extension a été developpée initialement pour enrichir des sites multilingues motorisés avec l'extension xili-language."
+
+#: xili-tidy-tags.php:574
+msgid "Here, as admin, set capabilities of the editor:"
+msgstr "Ici, en administrateur, réglez les accès des éditeurs :"
+
+#: xili-tidy-tags.php:576
+#: xili-tidy-tags.php:1211
+msgid "no capability"
+msgstr "aucun accès"
+
+#: xili-tidy-tags.php:577
+msgid "Grouping"
+msgstr "Accès au groupage"
+
+#: xili-tidy-tags.php:578
+msgid "Setting and grouping"
+msgstr "Accès aux réglages et groupages"
+
+#: xili-tidy-tags.php:580
+msgid "Disable Datatable javascript"
+msgstr "Javascript DataTable désactivé"
+
+#: xili-tidy-tags.php:583
+msgid "Set &raquo;"
+msgstr "Régler &raquo;"
+
+#: xili-tidy-tags.php:643
+msgid "Add a tag's group for a chosen category"
+msgstr "Ajouter un groupe correspondant à une catégorie"
+
+#: xili-tidy-tags.php:647
+msgid "choose a category"
+msgstr "choisir une catégorie"
+
+#: xili-tidy-tags.php:654
+msgid "Choose a parent tag's group"
+msgstr "Choisir le groupe parent"
+
+#: xili-tidy-tags.php:658
+#: xili-tidy-tags.php:806
+#: xili-tidy-tags.php:843
+#: xili-tidy-tags.php:866
+msgid "no parent"
+msgstr "pas de parent"
+
+#: xili-tidy-tags.php:669
+#: xili-tidy-tags.php:888
+msgid "Add &raquo;"
+msgstr "Ajouter &raquo;"
+
+#: xili-tidy-tags.php:670
+msgid "See docs to set xili_tidy_tag_cloud function or widget to implement in theme…"
+msgstr "Voir la documentation pour les réglages du nuage de mots en mode fonction (xili_tidy_tag_cloud) ou en widget"
+
+#: xili-tidy-tags.php:675
+msgid "xili-language plugin is not activated."
+msgstr "L'extension xili-language n'est pas active."
+
+#: xili-tidy-tags.php:684
+msgid "The group of languages is set for use with xili-language plugin."
+msgstr "Les groupes de langues sont en place."
+
+#: xili-tidy-tags.php:702
+msgid "The group of languages in xili-language plugin has been changed."
+msgstr "La liste des langues a été modifiée dans xili-language."
+
+#: xili-tidy-tags.php:704
+msgid "It is possible to update the group of languages."
+msgstr "Il est possible de modifier la liste des langues pour les mots-clefs."
+
+#: xili-tidy-tags.php:705
+#: xili-tidy-tags.php:976
+msgid "Update &raquo;"
+msgstr "Mise à jour &raquo;"
+
+#: xili-tidy-tags.php:709
+msgid "One or more language(s) here are not present in active xili-language list."
+msgstr "Des langues ici pour les mots-clefs ne sont plus présentes dans xili-language actif."
+
+#: xili-tidy-tags.php:717
+msgid "It is possible to import the group of languages."
+msgstr "Il est possible d'importer les groupes de langues."
+
+#: xili-tidy-tags.php:718
+msgid "Import…"
+msgstr "Importer…"
+
+#: xili-tidy-tags.php:721
+msgid "Go to settings of xili-language plugin and add languages"
+msgstr "Allez sur la page de réglages de l'extension xili-language et ajouter des langues"
+
+#: xili-tidy-tags.php:724
+msgid "See administrator for language settings."
+msgstr "Voir l'administrateur pour le réglage multilingue."
+
+#: xili-tidy-tags.php:738
+#: xili-tidy-tags.php:1250
+#: xili-tidy-tags.php:1261
+msgid "ID"
+msgstr "N°"
+
+#: xili-tidy-tags.php:739
+#: xili-tidy-tags.php:767
+#: xili-tidy-tags.php:1251
+#: xili-tidy-tags.php:1262
+msgid "Name"
+msgstr "Nom"
+
+#: xili-tidy-tags.php:740
+#: xili-tidy-tags.php:775
+msgid "Description"
+msgstr "Description"
+
+#: xili-tidy-tags.php:741
+msgid "Group slug"
+msgstr "Slug"
+
+#: xili-tidy-tags.php:742
+msgid "Group taxo ID"
+msgstr "N° taxinomie"
+
+#: xili-tidy-tags.php:743
+msgid "Parent"
+msgstr "Parent"
+
+#: xili-tidy-tags.php:744
+msgid "Tags"
+msgstr "Mots clés"
+
+#: xili-tidy-tags.php:745
+msgid "Action"
+msgstr "Action"
+
+#: xili-tidy-tags.php:771
+msgid "tags group slug"
+msgstr "Slug du groupe"
+
+#: xili-tidy-tags.php:780
+msgid "kinship"
+msgstr "Parenté"
+
+#: xili-tidy-tags.php:823
+#: xili-tidy-tags.php:851
+msgid "Select the parent if necessary"
+msgstr "Si nécessaire, sélectionner le groupe parent"
+
+#: xili-tidy-tags.php:829
+msgid "parent of: "
+msgstr "groupe contenant : "
+
+#: xili-tidy-tags.php:836
+msgid "no child now"
+msgstr "pas de mot clé dans ce groupe"
+
+#: xili-tidy-tags.php:859
+msgid "child of: "
+msgstr "appartient au groupe : "
+
+#: xili-tidy-tags.php:876
+msgid "Modify the parent if necessary"
+msgstr "Si nécessaire, modifier le parent"
+
+#: xili-tidy-tags.php:889
+#: xili-tidy-tags.php:1456
+msgid "Cancel"
+msgstr "Annuler"
+
+#: xili-tidy-tags.php:928
+msgid "Editor Capabilities changed to: "
+msgstr "Accès des éditeurs changés en : "
+
+#: xili-tidy-tags.php:937
+msgid "Group for: "
+msgstr "Groupe pour : "
+
+#: xili-tidy-tags.php:937
+msgid "category"
+msgstr "catégorie"
+
+#: xili-tidy-tags.php:944
+msgid "This group was added: "
+msgstr "Ce groupe a été ajouté."
+
+#: xili-tidy-tags.php:951
+#: xili-tidy-tags.php:1061
+msgid "The languages groups was added."
+msgstr "Les groupes de langues ont été ajoutés."
+
+#: xili-tidy-tags.php:964
+#: xili-tidy-tags.php:1057
+msgid "A new group was added."
+msgstr "Un nouveau groupe a été ajouté."
+
+#: xili-tidy-tags.php:968
+#: xili-tidy-tags.php:1058
+msgid "NO new group was added."
+msgstr "Aucun groupe ajouté."
+
+#: xili-tidy-tags.php:978
+msgid "Group to update."
+msgstr "Groupe à mettre à jour."
+
+#: xili-tidy-tags.php:988
+#: xili-tidy-tags.php:1059
+msgid "A group was updated."
+msgstr "Un groupe a été mis à jour."
+
+#: xili-tidy-tags.php:994
+msgid "Delete &raquo;"
+msgstr "Effacer &raquo;"
+
+#: xili-tidy-tags.php:997
+msgid "A group to delete."
+msgstr "Groupe à effacer."
+
+#: xili-tidy-tags.php:1005
+#: xili-tidy-tags.php:1060
+msgid "A group was deleted."
+msgstr "Le groupe a été effacé."
+
+#: xili-tidy-tags.php:1041
+#: xili-tidy-tags.php:1063
+msgid "Email sent."
+msgstr "Courriel envoyé"
+
+#: xili-tidy-tags.php:1043
+#, php-format
+msgid "Thanks for your email. A copy was sent to %s (%s)"
+msgstr "Merci pour votre courriel dont une copie est envoyé à %s (%s)"
+
+#: xili-tidy-tags.php:1048
+#, php-format
+msgid "Find the list of groups for %s."
+msgstr "Voici la liste des groupes de %s."
+
+#: xili-tidy-tags.php:1053
+#, php-format
+msgid "Groups of %s"
+msgstr "Groupes des %s"
+
+#: xili-tidy-tags.php:1054
+msgid "The group"
+msgstr "Le groupe"
+
+#: xili-tidy-tags.php:1055
+#: xili-tidy-tags.php:1554
+msgid "Actions"
+msgstr "Actions"
+
+#: xili-tidy-tags.php:1070
+#, php-format
+msgid "Tidy %s groups"
+msgstr "Les groupes de %s"
+
+#: xili-tidy-tags.php:1207
+msgid "Edit"
+msgstr "Modifier"
+
+#: xili-tidy-tags.php:1209
+msgid "Delete"
+msgstr "Effacer"
+
+#: xili-tidy-tags.php:1241
+msgid "Creating table of tags !"
+msgstr "Prépare la table des termes !"
+
+#: xili-tidy-tags.php:1252
+#: xili-tidy-tags.php:1263
+msgid "Posts"
+msgstr "Articles"
+
+#: xili-tidy-tags.php:1253
+#: xili-tidy-tags.php:1264
+msgid "Group(s) to choose"
+msgstr "Choisir le(s) groupe(s)"
+
+#: xili-tidy-tags.php:1281
+msgid "After checking or unchecking do not forget to click update button !"
+msgstr "Après avoir coché ou décoché, n'oubliez pas de cliquer sur le bouton \"mettre à jour…\""
+
+#: xili-tidy-tags.php:1284
+msgid "Sub list of tags"
+msgstr "Sous-sélection des mots-clés"
+
+#: xili-tidy-tags.php:1285
+msgid "Starting with:"
+msgstr "Commençant par :"
+
+#: xili-tidy-tags.php:1287
+msgid "Containing:"
+msgstr "Incluant :"
+
+#: xili-tidy-tags.php:1289
+msgid "Choose:"
+msgstr "Choisir :"
+
+#: xili-tidy-tags.php:1294
+msgid "every"
+msgstr "Tous"
+
+#: xili-tidy-tags.php:1295
+msgid "Unchecked only"
+msgstr "Les non cochés"
+
+#: xili-tidy-tags.php:1314
+msgid "Exclude this group"
+msgstr "Ce groupe exclu"
+
+#: xili-tidy-tags.php:1316
+msgid "No childs"
+msgstr "Ce parent seul"
+
+#: xili-tidy-tags.php:1320
+msgid "Include unchecked"
+msgstr "Inclure les non-cochés"
+
+#: xili-tidy-tags.php:1323
+#: xili-tidy-tags.php:1338
+msgid "Sub select…"
+msgstr "Sélectionner…"
+
+#: xili-tidy-tags.php:1323
+msgid "No select…"
+msgstr "Désélection"
+
+#: xili-tidy-tags.php:1326
+msgid "Columns: Group selection"
+msgstr "Colonnes : Sous-sélection d'un groupe"
+
+#: xili-tidy-tags.php:1329
+msgid "No sub-selection"
+msgstr "Pas de sous-sélection"
+
+#: xili-tidy-tags.php:1455
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: xili-tidy-tags.php:1548
+#, php-format
+msgid "Find the list of %s."
+msgstr "Voici la liste des %s."
+
+#: xili-tidy-tags.php:1557
+msgid "List updated in database !"
+msgstr "Liste des mots-clés sauvée dans la base de données !"
+
+#: xili-tidy-tags.php:1560
+msgid "Post Type <strong>not declared</strong> in Custom Taxonomy !"
+msgstr "Type de post non déclaré dans la taxinomie courante !"
+
+#: xili-tidy-tags.php:1564
+#, php-format
+msgid "%s in group with post type named: %s"
+msgstr "%s avec le type %s : affectation aux groupes"
+
+#: xili-tidy-tags.php:1628
+msgid "All lines"
+msgstr "Tous"
+
+#: xili-tidy-tags.php:1631
+msgid "First"
+msgstr "Début"
+
+#: xili-tidy-tags.php:1632
+msgid "Last page"
+msgstr "Fin"
+
+#: xili-tidy-tags.php:1633
+msgid "Next"
+msgstr "Suiv."
+
+#: xili-tidy-tags.php:1634
+msgid "Previous"
+msgstr "Préc."
+
+#: xili-tidy-tags.php:1636
+#, php-format
+msgid "Showing (_START_ to _END_) of _TOTAL_ %s"
+msgstr "Affiche (_START_ à _END_) des _TOTAL_ %s"
+
+#: xili-tidy-tags.php:1637
+msgid "(filtered from _MAX_ total entries)"
+msgstr "(filtrés du total des _MAX_ termes)"
+
+#: xili-tidy-tags.php:1638
+msgid "Show _MENU_ tags"
+msgstr "Afficher _MENU_ termes"
+
+#: xili-tidy-tags.php:1639
+msgid "Filter tags:"
+msgstr "Filter les termes :"
+
+#: xili-tidy-tags.php:1655
+msgid "Updating table of tags !"
+msgstr "Mise à jour de la table des termes !"
+
+#: xili-tidy-tags.php:1741
+msgid "Things to remember to set xili-tidy-tags:"
+msgstr "Eléments à retenir pour paramétrer xili-tidy-tags :"
+
+#: xili-tidy-tags.php:1743
+msgid "If you use it for multilingual website: verify that the xili-language trilogy is active."
+msgstr "Si vous utiliser xili-tidy-tags pour un site multilingue : vérifier que la trilogie des extensions est active."
+
+#: xili-tidy-tags.php:1744
+msgid "Update the list of targeted languages. See Actions left box."
+msgstr "Mettre à jour la liste des langues cible. Voir la boite 'actions' à gauche."
+
+#: xili-tidy-tags.php:1745
+msgid "For current site with lot of tags, create group or sub-group and go in assign page."
+msgstr "Pour un site avec des nombreaux mots-clefs, créer des groupes et sous-groupes et aller dans page Groupage."
+
+#: xili-tidy-tags.php:1746
+msgid "Don’t forget to activate a tags cloud widget."
+msgstr "N'oublier pas d'activer le widget Nuage de mots-clefs."
+
+#: xili-tidy-tags.php:1747
+msgid "In widget: the group for displaying tags in current lang is \"the_curlang\"."
+msgstr "Dans le widget : le nom du groupe pour un affichage des mots-clefs dans la langue active est \"the_curlang\"."
+
+#: xili-tidy-tags.php:1748
+msgid "In widget: the group to set is the slug - trademark for TradeMark group - if you create one."
+msgstr "Dans le widget : on utilise le slug du groupe - par exemple, trademark pour le groupe TradeMark, si vous en avez créé un."
+
+#: xili-tidy-tags.php:1751
+#: xili-tidy-tags.php:1762
+msgid "For more information:"
+msgstr "Pour plus d'infos :"
+
+#: xili-tidy-tags.php:1752
+#: xili-tidy-tags.php:1763
+msgid "<a href=\"http://dev.xiligroup.com/xili-tidy-tags\" target=\"_blank\">Xili-tidy-tags Plugin Documentation</a>"
+msgstr "<a href=\"http://dev.xiligroup.com/xili-tidy-tags\" target=\"_blank\">Documentation de l'extension xili-tidy-tags</a>"
+
+#: xili-tidy-tags.php:1753
+#: xili-tidy-tags.php:1766
+msgid "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">WordPress Documentation</a>"
+msgstr "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">Documentation WordPress (codex)</a>"
+
+#: xili-tidy-tags.php:1754
+#: xili-tidy-tags.php:1765
+msgid "<a href=\"http://forum2.dev.xiligroup.com/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://forum2.dev.xiligroup.com/\" target=\"_blank\">Forum Support</a>"
+
+#: xili-tidy-tags.php:1757
+msgid "Things to remember to assign tags to groups:"
+msgstr "Eléments à retenir pour grouper les mots-clefs :"
+
+#: xili-tidy-tags.php:1759
+msgid "Use features of paginated table."
+msgstr "Pour naviguer dans la liste utiliser la pagination du tableau."
+
+#: xili-tidy-tags.php:1760
+msgid "Don’t forget to update by clicking button in left - Actions - titled meta box."
+msgstr "Ne pas oublier de mettre à jour régulièrement en activant le bouton mise à jour à gauche dans la boite Actions."
+
+#: xili-tidy-tags.php:1764
+msgid "<a href=\"http://wiki.xiligroup.org/\" target=\"_blank\">Xili Wiki Documentation</a>"
+msgstr "<a href=\"http://wiki.xiligroup.org\" target=\"_blank\">Documents xili wiki</a>"
+
+#: xili-tidy-tags.php:1789
+msgid "Mail to dev.xiligroup"
+msgstr "Courriel pour dev.xiligroup"
+
+#: xili-tidy-tags.php:1790
+msgid "Cc:"
+msgstr "Cc :"
+
+#: xili-tidy-tags.php:1816
+msgid "Type of webmaster:"
+msgstr "Type de webmestre :"
+
+#: xili-tidy-tags.php:1818
+msgid "Define your experience as webmaster…"
+msgstr "Décrivez votre expérience en webmestre…"
+
+#: xili-tidy-tags.php:1819
+msgid "Newbie in WP"
+msgstr "Novice en WP"
+
+#: xili-tidy-tags.php:1820
+msgid "Good knowledge in WP and few in php"
+msgstr "Bon niveau en WP mais peu en php"
+
+#: xili-tidy-tags.php:1821
+msgid "Good knowledge in WP, CMS and good in php"
+msgstr "Bon niveau en WP, CMS et bon en php"
+
+#: xili-tidy-tags.php:1822
+msgid "WP theme and /or plugin developper"
+msgstr "Développeur de themes WP et/ou de Plugin pour WP"
+
+#: xili-tidy-tags.php:1825
+msgid "Subject:"
+msgstr "Objet :"
+
+#: xili-tidy-tags.php:1828
+msgid "Choose topic..."
+msgstr "Choisir le thème..."
+
+# msgid "Message"
+# msgstr "Message"
+#: xili-tidy-tags.php:1830
+msgid "Question"
+msgstr "Question"
+
+#: xili-tidy-tags.php:1831
+msgid "Encouragement"
+msgstr "Encouragement"
+
+#: xili-tidy-tags.php:1832
+msgid "Support need"
+msgstr "Demande de support"
+
+#: xili-tidy-tags.php:1834
+msgid "Your message here…"
+msgstr "Ecrire votre message…"
+
+#: xili-tidy-tags.php:1837
+msgid "Before send the mail, check the infos to be sent and complete textarea. A copy (Cc:) is sent to webmaster email (modify it if needed)."
+msgstr "Avant d'envoyer le courriel, cocher les infos à envoyer et compléter les autres champs. Une copie est envoyée au webmestre (courriel à modifier si nécessaire)."
+
+#: xili-tidy-tags.php:1840
+msgid "Send email"
+msgstr "Envoyer le courriel"
+
+#: xili-tidy-tags.php:1949
+msgid "Tags: "
+msgstr "Mots clés :"
+
+#: xili-tidy-tags.php:2031
+msgid "Invalid Taxonomy"
+msgstr "Taxinomie invalide"
+
+#: xili-tidy-tags.php:2350
+msgid "Cloud of grouped tags by xili-tidy-tags plugin"
+msgstr "Nuage de groupe(s) de mots clés par l'extension xili-tidy-tags "
+
+#: xili-tidy-tags.php:2351
+msgid "Tidy tags cloud"
+msgstr "Nuage de groupe de mots"
+
+#: xili-tidy-tags.php:2470
+msgid "Title:"
+msgstr "Titre :"
+
+#: xili-tidy-tags.php:2473
+msgid "Group"
+msgstr "Groupe"
+
+#: xili-tidy-tags.php:2475
+msgid "Choose a group…"
+msgstr "Choisir un groupe…"
+
+#: xili-tidy-tags.php:2478
+msgid "Current language"
+msgstr "Langue active"
+
+#: xili-tidy-tags.php:2482
+msgid "Current category"
+msgstr "Catégorie active"
+
+#: xili-tidy-tags.php:2496
+msgid "Group #2"
+msgstr "Groupe n°2"
+
+#: xili-tidy-tags.php:2499
+msgid "(Option) Choose a 2nd group…"
+msgstr "(Option) Choisir un 2e groupe…"
+
+#: xili-tidy-tags.php:2513
+msgid "Smallest size"
+msgstr "taille mini"
+
+#: xili-tidy-tags.php:2514
+msgid "Largest size"
+msgstr "taille maxi"
+
+#: xili-tidy-tags.php:2515
+msgid "Number"
+msgstr "Nombre"
+
+#: xili-tidy-tags.php:2516
+msgid "Order and sorting infos"
+msgstr "Info de tri et d'ordre"
+
+#: xili-tidy-tags.php:2518
+msgid "no orderby"
+msgstr "pas de critère"
+
+#: xili-tidy-tags.php:2519
+msgid "count"
+msgstr "par quantité"
+
+#: xili-tidy-tags.php:2520
+msgid "name"
+msgstr "par nom"
+
+#: xili-tidy-tags.php:2524
+msgid "no order"
+msgstr "indifférent"
+
+#: xili-tidy-tags.php:2525
+msgid "ASC"
+msgstr "croissant"
+
+#: xili-tidy-tags.php:2526
+msgid "DESC"
+msgstr "décroissant"
+
+#: xili-tidy-tags.php:2530
+msgid "Display as"
+msgstr "Afficher comme"
+
+#: xili-tidy-tags.php:2532
+msgid "Cloud"
+msgstr "Nuage"
+
+#: xili-tidy-tags.php:2533
+msgid "List"
+msgstr "Liste"
+
+#: xili-tidy-tags.php:2540
+msgid "Target site ID"
+msgstr "ID du site cible"
+
+#: xili-tidy-tags.php:2543
+msgid "Choose site..."
+msgstr "Choisir le site..."
+
+#: xili-tidy-tags.php:2545
+msgid "undefined"
+msgstr "non affecté"
+
+#: xili-tidy-tags.php:2554
+msgid "No site assigned to current admin user ! Please verify user's list for targeted sites."
+msgstr "Pas de site assigné pour l'admin courant ! SVP, verifier la liste des utilisateurs dans les sites."
+
+#: xili-tidy-tags.php:2560
+msgid "Taxonomies"
+msgstr "Taxinomies"
+
+#: xili-tidy-tags.php:2564
+msgid "tidy taxonomy"
+msgstr "Tidy taxinomie"
+
+#: xili-tidy-tags.php:2577
+msgid "Condition"
+msgstr "Condition fonction(params)"
+
+#~ msgid "Tidy tags"
+#~ msgstr "Tidy tags"
+
+#~ msgid "Add a group"
+#~ msgstr "Ajouter un groupe"
+
+#~ msgid "Edit Group"
+#~ msgstr "Modifier le groupe"
+
+#~ msgid "Delete group"
+#~ msgstr "Supprimer le groupe"
+
+#~ msgid "List of %s"
+#~ msgstr "Liste de %s"
+
+#~ msgid "Groups selection"
+#~ msgstr "Sous-sélection des groupes"
