@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
 Requires at least: 3.0
 Tested up to: 3.4
-Stable tag: 1.7.0
+Stable tag: 1.8.0
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -29,14 +29,17 @@ are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark". You can choose different storage policies.
 
 = TRILOGY FOR MULTILINGUAL CMS SITE =
+Please verify that you have installed the latest versions of:
 [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/)
 
 = Roadmap =
 * readme.txt rewritting.
+= 1.8.0 ( 2012-08-20 ) =
 * admin UI in separate class.
+* new icons
 = 1.7.0 ( 2012-05-28) =
 * language info in tags list
-* fixes in assign list display and query
+* fixes in assign list display
 * cloud of other site if multisite in widget (further dev)
 = 1.6.4 =
 * pre-tests with WP 3.4
@@ -177,7 +180,9 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
-
+= 1.8.0 ( 2012-08-20 ) =
+* admin UI in separate class and file.
+* new icons
 = 1.7.0 ( 2012-05-28) =
 * language info in tags list
 * fixes in assign list display
@@ -218,7 +223,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 (2009-03-31) = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2012-05-28 dev.xiligroup.com
+© 2012-08-20 dev.xiligroup.com
 
 == Upgrade Notice ==
 
