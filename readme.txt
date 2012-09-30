@@ -1,10 +1,11 @@
 === xili-tidy-tags ===
 Contributors: michelwppi, MS dev.xiligroup
 Donate link: http://dev.xiligroup.com/
-Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu
-Requires at least: 3.0
-Tested up to: 3.4
-Stable tag: 1.8.0
+Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu, bbPress
+Requires at least: 3.3
+Tested up to: 3.4.2
+Stable tag: 1.8.1
+License: GPLv2
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
 
@@ -34,7 +35,9 @@ Please verify that you have installed the latest versions of:
 
 = Roadmap =
 * readme.txt rewritting.
-= 1.8.0 ( 2012-08-20 ) =
+* dropdown menu option.
+= 1.8.0, 1.8.1 ( 2012-09-25 ) =
+* fixes, ready for bbPress topic tags
 * admin UI in separate class.
 * new icons
 = 1.7.0 ( 2012-05-28) =
@@ -180,7 +183,8 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
-= 1.8.0 ( 2012-08-20 ) =
+= 1.8.0, 1.8.1 ( 2012-08-20, 2012-09-25 ) =
+* fixes (constants), cloud/list echoing in template tag
 * admin UI in separate class and file.
 * new icons
 = 1.7.0 ( 2012-05-28) =
@@ -223,7 +227,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 (2009-03-31) = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2012-08-20 dev.xiligroup.com
+© 2012-09-25 dev.xiligroup.com
 
 == Upgrade Notice ==
 
@@ -242,7 +246,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 The plugin post is frequently documented [dev.xiligroup.com](http://dev.xiligroup.com/)
 and updated [Wordpress repository](http://wordpress.org/extend/plugins/xili-tidy-tags/download/).
 
-See also the [dev.xiligroup plugins forum](http://forum2.dev.xiligroup.com/forum.php?id=2).
+See also the [dev.xiligroup plugins forum](http://dev.xiligroup.com/?forum=xili-tidy-tags-plugin).
 
 
 © 2009-2012 MS - dev.xiligroup.com
