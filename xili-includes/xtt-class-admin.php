@@ -1,6 +1,6 @@
 <?php
 /**
- * xili-tidy-tags class admin (now separated file since 1.8.0) - 1.8.1 fixes - 1.8.2
+ * xili-tidy-tags class admin (now separated file since 1.8.0) - 1.8.1 fixes - 1.8.2 (s)- 
  *
  */
 
@@ -232,15 +232,22 @@ class xili_tidy_tags_admin extends xili_tidy_tags {
 			    
 			case 'sendmail'; // 1.5.4
 				check_admin_referer( 'xilitagsettings' ); 
-				// not data saved in settings 20130126
+				$this->xili_settings['url'] = ( isset( $_POST['urlenable'] ) ) ? $_POST['urlenable'] : '' ;
+				$this->xili_settings['theme'] = ( isset( $_POST['themeenable'] ) ) ? $_POST['themeenable'] : '' ;
+				$this->xili_settings['wplang'] = ( isset( $_POST['wplangenable'] ) ) ? $_POST['wplangenable'] : '' ;
+				$this->xili_settings['version-wp'] = ( isset( $_POST['versionenable'] ) ) ? $_POST['versionenable'] : '' ;
+				$this->xili_settings['xiliplug'] = ( isset( $_POST['xiliplugenable'] ) ) ? $_POST['xiliplugenable'] : '' ;
+				$this->xili_settings['webmestre-level'] = $_POST['webmestre']; // 1.8.2
+				update_option('xili_tidy_tags_settings', $this->xili_settings);
 				$contextual_arr = array();
-				if ( isset( $_POST['urlenable'] ) ) $contextual_arr[] = "url=[ ".get_bloginfo ('url')." ]" ;
-				if ( isset( $_POST['onlocalhost'] ) ) $contextual_arr[] = "url=local" ;
-				if ( isset( $_POST['themeenable'] ) ) $contextual_arr[] = "theme=[ ".get_option ('stylesheet')." ]" ;
-				if ( isset( $_POST['wplangenable'] ) ) $contextual_arr[] = "WPLANG=[ ".WPLANG." ]" ;
-				if ( isset( $_POST['versionenable'] ) ) $contextual_arr[] = "WP version=[ ".$wp_version." ]" ;
-				if ( isset( $_POST['xiliplugenable'] ) ) $contextual_arr[] = "xiliplugins=[ ". $this->check_other_xili_plugins() ." ]" ;
-				$contextual_arr[] = $_POST['webmestre']; // 1.9.1
+				if ( $this->xili_settings['url'] == 'enable' ) $contextual_arr[] = "url=[ ".get_bloginfo ('url')." ]" ;
+				if ( isset($_POST['onlocalhost']) ) $contextual_arr[] = "url=local" ;
+				if ( $this->xili_settings['theme'] == 'enable' ) $contextual_arr[] = "theme=[ ".get_option ('stylesheet')." ]" ;
+				if ( $this->xili_settings['wplang'] == 'enable' ) $contextual_arr[] = "WPLANG=[ ".WPLANG." ]" ;
+				if ( $this->xili_settings['version-wp'] == 'enable' ) $contextual_arr[] = "WP version=[ ".$wp_version." ]" ;
+				if ( $this->xili_settings['xiliplug'] == 'enable' ) $contextual_arr[] = "xiliplugins=[ ". $this->check_other_xili_plugins() ." ]" ;
+					
+				$contextual_arr[] = $this->xili_settings['webmestre-level'];  // 1.9.1
 				
 				$headers = 'From: xili-tidy-tags plugin page <' . get_bloginfo ('admin_email').'>' . "\r\n" ;
 	   			if ( '' != $_POST['ccmail'] ) $headers .= 'Cc: <'.$_POST['ccmail'].'>' . "\r\n";
@@ -256,6 +263,7 @@ class xili_tidy_tags_admin extends xili_tidy_tags {
 				$message = __('Email sent.','xili_tidy_tags');
 				$msg = 7;
 				$emessage = sprintf( __( 'Thanks for your email. A copy was sent to %s (%s)','xili_tidy_tags' ), $_POST['ccmail'], $result ) ;
+				$actiontype = "add";
 				break;    
 			    
 			default :
@@ -1793,7 +1801,7 @@ class xili_tidy_tags_admin extends xili_tidy_tags {
 		<input class="widefat" id="ccmail" name="ccmail" type="text" value="<?php bloginfo ('admin_email') ; ?>" /></label><br /><br />
 		<?php if ( false === strpos( get_bloginfo ('url'), 'local' ) ){ ?>
 			<label for="urlenable">
-				<input type="checkbox" id="urlenable" name="urlenable" value="enable" <?php if( $this->xili_settings['url']=='enable') echo 'checked="checked"' ?> />&nbsp;<?php bloginfo ('url') ; ?>
+				<input type="checkbox" id="urlenable" name="urlenable" value="enable" <?php if( isset( $this->xili_settings['url'] ) && $this->xili_settings['url']=='enable') echo 'checked="checked"' ?> />&nbsp;<?php bloginfo ('url') ; ?>
 			</label><br />
 		<?php } else { ?>
 			<input type="hidden" name="onlocalhost" id="onlocalhost" value="localhost" />
@@ -1807,7 +1815,7 @@ class xili_tidy_tags_admin extends xili_tidy_tags {
 		</label><br />
 		<?php } ?>
 		<label for="versionenable">
-			<input type="checkbox" id="versionenable" name="versionenable" value="enable" <?php if( $this->xili_settings['version']=='enable') echo 'checked="checked"' ?> />&nbsp;<?php echo "WP version: ".$wp_version ; ?>
+			<input type="checkbox" id="versionenable" name="versionenable" value="enable" <?php if( isset( $this->xili_settings['version-wp'] ) && $this->xili_settings['version-wp']=='enable') echo 'checked="checked"' ?> />&nbsp;<?php echo "WP version: ".$wp_version ; ?>
 		</label><br /><br />
 		<?php $list = $this->check_other_xili_plugins();
 		if (''!= $list ) {?>
@@ -1817,11 +1825,12 @@ class xili_tidy_tags_admin extends xili_tidy_tags {
 		<?php } ?>
 		<label for="webmestre"><?php _e('Type of webmaster:','xili_tidy_tags'); ?>
 		<select name="webmestre" id="webmestre" style="width:100%;">
-			<option value="?" ><?php _e('Define your experience as webmaster…','xili_tidy_tags'); ?></option>
-			<option value="newbie" ><?php _e('Newbie in WP','xili_tidy_tags'); ?></option>
-			<option value="wp-php" ><?php _e('Good knowledge in WP and few in php','xili_tidy_tags'); ?></option>
-			<option value="wp-php-dev" ><?php _e('Good knowledge in WP, CMS and good in php','xili_tidy_tags'); ?></option>
-			<option value="wp-plugin-theme" ><?php _e('WP theme and /or plugin developper','xili_tidy_tags'); ?></option>
+		<?php if ( !isset ( $this->xili_settings['webmestre-level'] ) ) $this->xili_settings['webmestre-level'] = '?' ; ?>
+			<option value="?" <?php selected( $this->xili_settings['webmestre-level'], '?' ); ?>><?php _e('Define your experience as webmaster…','xili_tidy_tags'); ?></option>
+			<option value="newbie" <?php selected( $this->xili_settings['webmestre-level'], "newbie" ); ?>><?php _e('Newbie in WP','xili_tidy_tags'); ?></option>
+			<option value="wp-php" <?php selected( $this->xili_settings['webmestre-level'], "wp-php" ); ?>><?php _e('Good knowledge in WP and few in php','xili_tidy_tags'); ?></option>
+			<option value="wp-php-dev" <?php selected( $this->xili_settings['webmestre-level'], "wp-php-dev" ); ?>><?php _e('Good knowledge in WP, CMS and good in php','xili_tidy_tags'); ?></option>
+			<option value="wp-plugin-theme" <?php selected( $this->xili_settings['webmestre-level'], "wp-plugin-theme" ); ?>><?php _e('WP theme and /or plugin developper','xili_tidy_tags'); ?></option>
 		</select></label>
 		<br /><br />
 		<label for="subject"><?php _e('Subject:','xili_tidy_tags'); ?>

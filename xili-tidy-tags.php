@@ -10,7 +10,7 @@ License: GPLv2
 Text Domain: xili_tidy_tags
 Domain Path: /languages/
 */
-# 1.8.2 - 130127 - tests 3.5.1 - fixes prepare warning
+# 1.8.2 - 130127 - tests 3.5.1 - fixes prepare warning - fixes support (s)
 # 1.8.1 - 120925 - fixes - ready for bbPress topic-tag
 # 1.8.0 - 120819 - 120728 - class admin in separated file - new icons
 # 1.7.0 - 120528 - language info in tags list - fixes in assign list display - cloud of other site if multisite in widget (further dev)
