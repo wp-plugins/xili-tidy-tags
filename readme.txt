@@ -1,7 +1,7 @@
 === xili-tidy-tags ===
 Contributors: michelwppi, MS dev.xiligroup
 Donate link: http://dev.xiligroup.com/
-Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu, bbPress
+Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu, bbPress, shortcode
 Requires at least: 3.3
 Tested up to: 3.5.1
 Stable tag: 1.8.2
@@ -28,6 +28,14 @@ The powerful widget is easy to setup and to choose what and when group of tags t
 = Template tags = 
 are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark". You can choose different storage policies.
+
+= Shortcode =
+add shortcode inside a post content to include in your text a cloud of a group of tags.
+
+**Example of shortcode :**  `[xili-tidy-tags params="tagsgroup=trademark&largest=10&smallest=10" glue=" | "]`
+In this cas, the group of tags named 'trademark' will be display inside a paragraph of a post. The params are defined as in `xili_tidy_tag_cloud()` and as in `wp_tag_cloud()`. The glue is chars inserted between the tags (if omitted default is a space).
+
+[Example of tag cloud made with shortcode here](http://dev.xiligroup.com/?xilifunctions=shortcode-xili-tidy-tags)
 
 = TRILOGY FOR MULTILINGUAL CMS SITE =
 Please verify that you have installed the latest versions of:
@@ -230,7 +238,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 (2009-03-31) = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2013-01-27 dev.xiligroup.com
+© 2013-02-05 dev.xiligroup.com
 
 == Upgrade Notice ==
 
