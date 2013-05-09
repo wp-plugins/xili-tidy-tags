@@ -3,8 +3,8 @@ Contributors: michelwppi, MS dev.xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu, bbPress, shortcode
 Requires at least: 3.3
-Tested up to: 3.5.1
-Stable tag: 1.8.2
+Tested up to: 3.6
+Stable tag: 1.8.4
 License: GPLv2
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
@@ -44,66 +44,10 @@ Please verify that you have installed the latest versions of:
 = Roadmap =
 * readme.txt rewritting.
 * dropdown menu option.
-= 1.8.0, 1.8.1, 1.8.2 ( 2012-09-25 ) =
-* tests 3.5.1
-* fixes, ready for bbPress topic tags
-* admin UI in separate class.
-* new icons
-= 1.7.0 ( 2012-05-28) =
-* language info in tags list
-* fixes in assign list display
-* cloud of other site if multisite in widget (further dev)
-= 1.6.4 =
-* pre-tests with WP 3.4
-= 1.6.1, 1.6.2 =
-* fixes url and messages, new folder organization, fixes custom post tags, tag edit + hierarchy.
-= 1.6.0 =
-* today xili-tidy-tags is ready for custom taxonomy and custom post type.
-* tags cloud widget with conditionnal display as other xili plugins.
-= 1.5.4 from 1.3.0 =
-*Progressive improvements and more features*
 
-* add two new template tags : 
-* `link_for_posts_of_xili_tags_group` to return the link to show posts of a xili_tags_group.
-* `xili_tags_group_list` to list tags-group with link to list Posts with tags belonging to each tags-group.
-* Webmaster: see end of source to read examples.
-* In settings UI: option to disable datatables javascript in assign UI (for those with slow server and huge list of tags)
-* In assign UI: add options to select unchecked tags only and to exclude one group and include unassigned.
-* popup for groups in widget
-* javascript in tags list assign  (thanks to DataTables library)
-* In tags cloud widget , option to display tags as list added.
-* Capabilities updated for editor role.
-* Minor modifications to be compatible with WP 3.0 standalone and wpmu (multisite)
-* Add sub-selection by tags belonging to a group - or not belonging to this group (suggestion of David). With this way, it is possible to see tags selected in one group and the others there are not. The sub-selection by starting or containing letters remains. The columns of group are now sorted and grouped.
-
-= 1.2.1 from 0.9.0 =
-
-* now quick-edit tag is allowed (keep terms groups)...
-* fix default sorting and order in sub-selection by group for `xili_tidy_tag_cloud()` (thanks to Zarban)
-
-* In loop, the template tag `the_tags()` named `xili_the_tags` is now available to sub-select tags for the current post from sub-groups. Example of code:
- 
-`
-<?php xili_the_tags('',' &bull; ','',array('sub_groups'=>array('trademark', 'software')));
-?>
-`
-* With these parameters, only tags from subgroups 'trademark' & 'software' are displayed in loop with each post (use slug of terms). The first three parameters are used like in `the_tags()`. The fourth is an array with an key added to a lot of keys as in taxonomy function `wp_get_object_terms` - see source .
-
-* add shortcode to include a cloud of a group of tags inside a post, also compatible with new recent WP 2.8.
-**Example of shortcode :**  `[xili-tidy-tags params="tagsgroup=trademark&largest=10&smallest=10" glue=" | "]`
-In this cas, the group of tags named 'trademark' will be display inside a paragraph of a post. The params are defined as in `xili_tidy_tag_cloud()` and as in `wp_tag_cloud()`. The glue is chars inserted between the tags (if omitted default is a space).
-
-* Add capability management for editors role grouping - and setting -. Set by administrator role.
-
-* When creating tags in post edit UI - this new tag is grouped to default post's lang if xili-language is active and if this tag is not already grouped.
-
-* Add features to modify kindship of tags group, now allows multiple cloud widgets - see note in [installation](http://wordpress.org/extend/plugins/xili-tidy-tags/installation/). 
-
-* With big tags list in admin UI, select tags starting or containing char(s) or word(s) - possible to split cloud in sub clouds via &offset= et &number= in the var passed to the `xili_tidy_tag_cloud` - .po file completed.
-
-* The tidy tags cloud widget is available. 
-* And the template tags `xili_tidy_tag_cloud` (useful for theme's creator) is now more powerful with more args as in `tag_cloud or get_terms`.
-* It is also possible to create tag's group according category in three clicks - see second example in installation and [screenshots](http://wordpress.org/extend/plugins/xili-tidy-tags/screenshots/).
+= Version 1.8.4 =
+* Last Updated 2013-05-09
+* see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-tidy-tags/changelog/)
 
 
 == Installation ==
@@ -192,6 +136,13 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
 
 == Changelog ==
+= 1.8.3 ( 2013-05-08 ) =
+* add capabilities removing when deactivating.
+* tests 3.6-beta2
+* po file updated
+= 1.8.3 ( 2013-04-22 ) =
+* tests 3.6
+* better errors management for external instancing
 = 1.8.2 ( 2013-01-27 ) = 
 * tests WP 3.5.1 - fixes warning
 = 1.8.0, 1.8.1 ( 2012-08-20, 2012-09-25 ) =
@@ -238,7 +189,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 (2009-03-31) = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2013-02-05 dev.xiligroup.com
+© 2013-05-09 dev.xiligroup.com
 
 == Upgrade Notice ==
 
