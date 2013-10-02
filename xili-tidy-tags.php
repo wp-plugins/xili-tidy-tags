@@ -1153,14 +1153,15 @@ function xili_tidy_tags_group_links ( $args = array() ) {
 			$r['echo'] = false ;
 	
 	$tag = get_term( (int) $term_id, $r['tidy_post_tag'], OBJECT, 'edit' );
-	
-	if ( $tag->term_group > 0 ) {
+	$the_linklist = '';
+	if ( isset ($tag->term_group) && $tag->term_group > 0 ) {
 		
 		$alias_group = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $wpdb->terms WHERE term_group = %s", $tag->term_group) );
 				
 		if ( $alias_group ) {
 			
 			$linklist = array();
+			
 			foreach ( $alias_group as $one_alias ) {
 				if ( $one_alias->slug != $tag->slug ) {
 					
@@ -1208,15 +1209,15 @@ function xili_tidy_tags_group_links ( $args = array() ) {
 		}
 		
 		if ( $r['format'] == 'list' ) {
-			$linklist = implode ( $r['separator'], $linklist );
+			$the_linklist = implode ( $r['separator'], $linklist );
 		}
 		
 	}
 	
 	if ( $r['echo'] ) {
-		echo $linklist;
+		echo $the_linklist;
 	} else {
-		return $linklist;
+		return $the_linklist;
 	}
 }
 
@@ -1262,7 +1263,7 @@ function xili_tidy_tag_in_other_lang ( $args = array() ) {
 	
 	$tag = get_term( (int) $term_id, $r['tidy_post_tag'], OBJECT, 'edit' );
 	
-	if ( $tag->term_group > 0 ) {
+	if ( isset ($tag->term_group)  && $tag->term_group > 0 ) {
 		
 		$alias_group = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $wpdb->terms WHERE term_group = %s", $tag->term_group) );
 				
