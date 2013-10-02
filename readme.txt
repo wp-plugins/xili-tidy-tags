@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu, bbPress, shortcode
 Requires at least: 3.3
 Tested up to: 3.6
-Stable tag: 1.8.6
+Stable tag: 1.9.0
 License: GPLv2
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
@@ -22,12 +22,18 @@ xili-tidy-tags is a tool for grouping tags by language with xili-language plugin
 
 With default parent feature, a tag (term) can have only one parent. The default taxonomy (see file taxonomy.php in folder wp-includes) is very poweful but don't include the queries to group tags under one another tag. Is is the purpose of this plugin xili-tidy-tags created since WP 2.7 ! Initially created to group tags by language, he structurally contains all functions to group tags by semantic groups AND one tag can belong to one or more groups.
 
+= Why xili-tidy-tags introduces grouping features since version 1.9 ? =
+**RESERVED for DEVELOPERS using template-tags**
+Using nice feature "alias of" and "group" of WP core taxonomy.php, xili-tidy-tags offers now a way to "link" tags of different languages (red, rouge, rot,…). So when displaying list of french posts associated with a french tag (*rouge*), it is now possible to show a list of tags in other languages (*red, rouge, rot,…*) and visitor is now able to click on *red* and show the webpage of list of posts tagged with *red*. Only taxonomy wpdb tables are used, no new tables, no new lines in options table.
+
 = Widget to insert Tags cloud =
 The powerful widget is easy to setup and to choose what and when group of tags to display.
 
-= Template tags = 
-are provided to enrich the theme and display sub-selection of tags.
+= Template tags usable in theme design = 
+Template tags are provided to enrich the theme and display sub-selection of tags.
 Through the settings admin UI, it is possible to assign to a tag one or more groups (by instance a french tag to the french language group. A trademark term like WordPress to a group named "trademark". You can choose different storage policies.
+
+**NEW 2 template-tags since 1.9 :** `xili_tidy_tags_group_links` to show the group of tags containing the current tag (useful in tag.php of theme) and `xili_tidy_tag_in_other_lang` to return info (link) of one other tag of the group in an another lang. Xili-language version > 2.9.0 will use the links switching in language switching navigation menu when displaying tag.php page. (if "red" tag page is displayed, language menu for french will link to "rouge" !)
 
 = Shortcode =
 add shortcode inside a post content to include in your text a cloud of a group of tags.
@@ -43,10 +49,10 @@ Please verify that you have installed the latest versions of:
 
 = Roadmap =
 * readme.txt rewritting.
-* more grouping features
+* more function for grouping new features introducted in version 1.9
 
-= Version 1.8.6 =
-* Last Updated 2013-09-03
+= Version 1.9.0 =
+* Last Updated 2013-09-29
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-tidy-tags/changelog/)
 
 
@@ -134,8 +140,12 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 7. the admin assign UI : with big tags list, it is now possible to select tags starting or containing char(s) or word(s).
 8. the admin assign UI : here only the group “software” - a parent group -  is selected and all tags of his childs are shown.
 9. the admin assign UI : here only the group “software” - a parent group -  is selected and only tags of this group are shown (No childs checked).
+10. Tags grouping - same sense but in different languages.
 
 == Changelog ==
+
+= 1.9.0 ( 2013-09-29 ) =
+* Grouping features : This version introduces the tags multilingual grouping *same sense but in different languages* (using alias feature existing in WP taxonomy) according languages.
 = 1.8.6 ( 2013-09-03 ) =
 * tests WP 3.6 final - 
 * fixes Strict Standards message (class Walker)
@@ -198,7 +208,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 (2009-03-31) = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2013-09-03 dev.xiligroup.com
+© 2013-09-29 dev.xiligroup.com
 
 == Upgrade Notice ==
 
