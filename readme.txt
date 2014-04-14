@@ -3,8 +3,8 @@ Contributors: michelwppi, MS dev.xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu, bbPress, shortcode
 Requires at least: 3.3
-Tested up to: 3.8
-Stable tag: 1.9.1
+Tested up to: 3.9
+Stable tag: 1.9.2
 License: GPLv2
 
 xili-tidy-tags is a tool for grouping tags by semantic groups or by language and for creating tidy tag clouds. 
@@ -47,12 +47,16 @@ In this cas, the group of tags named 'trademark' will be display inside a paragr
 Please verify that you have installed the latest versions of:
 [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/)
 
+= Translations available for admin UI =
+* english, french by the author,
+* spanish and serbian - contributions of [Ognjen D., firstsiteguide.com](http://www.firstsiteguide.com)
+
 = Roadmap =
 * readme.txt rewritting.
 * more function for grouping new features introducted in version 1.9
 
-= Version 1.9.1 =
-* Last Updated 2013-09-29
+= Version 1.9.2 =
+* Last Updated 2014-04-13
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-tidy-tags/changelog/)
 
 
@@ -143,7 +147,8 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 10. Tags grouping - same sense but in different languages.
 
 == Changelog ==
-
+= 1.9.2 ( 2014-04-13 ) =
+* tests WP 3.9-rc - fixes notices
 = 1.9.1 ( 2013-12-29 ) =
 * tests WP 3.8 final - 
 * more accurate messages on initialisation
@@ -211,7 +216,7 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 = 0.8.1 (2009-03-31) = some fixes - improved query - better tag_cloud()
 = 0.8.0 = first public beta release.
 
-© 2013-12-29 dev.xiligroup.com
+© 2014-04-13 dev.xiligroup.com
 
 == Upgrade Notice ==
 
