@@ -147,9 +147,9 @@ In xiligroup plugins series, xili-tidy-tags is compatible with [xili-language](h
 10. Tags grouping - same sense but in different languages.
 
 == Changelog ==
-= 1.10.0 ( 2014-12-10 ) =
+= 1.10.0 ( 2014-12-19 ) =
 * tested WP 4.1
-* fixes editing alias tags
+* fixes editing alias tags through new or edit form one post_tag
 = 1.9.3 ( 2014-12-10 ) =
 * tests WP 4.1-beta - fixes news_id
 = 1.9.2 ( 2014-04-13 ) =
