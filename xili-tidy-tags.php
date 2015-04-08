@@ -1070,7 +1070,7 @@ add_shortcode('xili-tidy-tags', 'xili_tidy_tags_shortcode');
  *
  * @since 1.8.6
  *
- * @updated 1.10.1
+ * @updated 1.10.3 - multiple
  *
  * xili_tidy_tags_dropdown();
  *
@@ -1092,7 +1092,7 @@ function xili_tidy_tags_dropdown ( $args = array() ) {
 	$defaults = array(
 		'format' => 'array', 'orderby' => 'name', 'order' => 'ASC',
 		'exclude' => '', 'include' => '', 'link' => 'view', 'tagsgroup' => '', 'tagsallgroup' => '',
-		'tidy_post_tag' => 'post_tag', 'echo' => true, 'id_dropdown' => 'xtt_cloud_drop',
+		'tidy_post_tag' => 'post_tag', 'echo' => true, 'id_dropdown' => 'xttclouddrop',
 	);
 	$r = array_merge( $defaults, $r );
 	$echo = $r['echo'];
@@ -1117,18 +1117,19 @@ function xili_tidy_tags_dropdown ( $args = array() ) {
 
 		if ( $echo ) {
 			echo $dropdown;
+			$drop_name = str_replace('-', '', str_replace('_', '', $r['id_dropdown']));
 			?>
 			<script type='text/javascript'>
-	/* <![CDATA[ */
-		var dropdown = document.getElementById("<?php echo $r['id_dropdown']; ?>");
-		function onTagChange() {
-			if ( dropdown.options[dropdown.selectedIndex].value != '' ) {
-				location.href = dropdown.options[dropdown.selectedIndex].value;
+		/* <![CDATA[ */
+			var dropdown_<?php echo $drop_name; ?> = document.getElementById("<?php echo $r['id_dropdown']; ?>");
+			function onTagChange() {
+				if ( this.options[this.selectedIndex].value != '#' ) {
+					location.href = this.options[this.selectedIndex].value;
+				}
 			}
-		}
-		dropdown.onchange = onTagChange;
-	/* ]]> */
-	</script>
+			dropdown_<?php echo $drop_name; ?>.onchange = onTagChange;
+		/* ]]> */
+		</script>
 			<?php
 
 
