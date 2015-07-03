@@ -11,7 +11,7 @@
  * 1.10.1 - 150228 - pre-tested WP 4.2-alpha - rewrite selected(), checked()
  * 1.10.2 - 150322 - new datatables JS+CSS (1.10.5)
  * 1.10.3 - 150408 - fixes notice with constante line 61
- * 1.11.0 - 150703 - datatables js 1.10.7 updated WP 43
+ * 1.11.0 - 150703 - datatables js 1.10.7 updated WP 43 + debug
  */
 
 class xili_tidy_tags_admin extends xili_tidy_tags {
@@ -57,10 +57,11 @@ class xili_tidy_tags_admin extends xili_tidy_tags {
 	}
 
 	function admin_init() {
+		$suffix = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
         /* Register our script. */
-        wp_register_script( 'datatables-v10', plugins_url('js/jquery.dataTables.min.js', $this->file_file ) , array( 'jquery' ), '1.10.7', true );
+        wp_register_script( 'datatables-v10', plugins_url('js/jquery.dataTables'.$suffix.'.js', $this->file_file ) , array( 'jquery' ), '1.10.7', true );
 
-        wp_register_style( 'table_style-v10', plugins_url('/css/jquery.dataTables.min.css', $this->file_file ), array(), '1.10.7', 'screen' );
+        wp_register_style( 'table_style-v10', plugins_url('/css/jquery.dataTables'.$suffix.'.css', $this->file_file ), array(), '1.10.7', 'screen' );
     }
 
     /**
