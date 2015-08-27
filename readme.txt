@@ -3,7 +3,7 @@ Contributors: michelwppi, MS dev.xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: tag,tags,theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary,widget,CMS, multisite, wpmu, bbPress, shortcode
 Requires at least: 4.0
-Tested up to: 4.3-beta1
+Tested up to: 4.3
 Stable tag: 1.11.1
 License: GPLv2
 
